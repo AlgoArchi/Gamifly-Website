@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+footer .social{
+    padding-left: 0 !important;
+}
+
+footer .social li{
+    display: inline;
+}
+
+footer .social li a{
+    color: rgba(185, 185, 185, 0.41);
+    padding-right: 10px;
+    font-size: 24px;
+}
+
+
+.login-btn{
+    padding: 10px 25px;
+    background-color: #212121;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+}
