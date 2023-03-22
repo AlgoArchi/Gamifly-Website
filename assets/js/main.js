@@ -34,8 +34,38 @@ jQuery(document).ready(function($) {
     //   autoplaySpeed: 0,
       centerMode: true,
     //   cssEase: 'linear',
-      slidesToShow: 4,
-      slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 1008,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+            breakpoint: 800,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            },
+        },
+      ],    
     //   variableWidth: true,
     //   infinite: true,
       initialSlide: 1,
