@@ -15,9 +15,13 @@ footer .social li{
 footer .social li a{
     color: rgba(185, 185, 185, 0.41);
     padding-right: 10px;
+    transition: .4s;
     font-size: 24px;
 }
 
+footer .social li a:hover {
+    color: #fff;
+}
 
 .login-btn{
     padding: 10px 25px;
