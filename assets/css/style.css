@@ -1,7 +1,36 @@
+@font-face {
+    font-family: "Eurostile_Black";
+    src: url("../fonts/Eurostile_Font_Family/Eurostile_Black.otf");
+}
+
+@font-face {
+    font-family: "Eurostile_Bold";
+    src: url("../fonts/Eurostile_Font_Family/Eurostile_Bold.otf");
+}
+
+@font-face {
+    font-family: "Sofia_Pro_Black";
+    src: url("../fonts/Sofia_Pro_Font_Family/Sofia_Pro_Black.otf");
+}
+
+@font-face {
+    font-family: "Sofia_Pro_Bold";
+    src: url("../fonts/Sofia_Pro_Font_Family/Sofia_Pro_Bold.otf");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Sofia_Pro_Black", sans-serif;
+}
+
+.eurostile-bold{
+    font-family: 'Eurostile_Bold', sans-serif !important;
+}
+
+.eurostile-black{
+    font-family: 'Eurostile_Black', sans-serif !important;
 }
 
 footer .social{
