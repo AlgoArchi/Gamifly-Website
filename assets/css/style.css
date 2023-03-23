@@ -51,11 +51,3 @@ footer .social li a{
 footer .social li a:hover {
     color: #fff;
 }
-
-.login-btn{
-    padding: 10px 25px;
-    background-color: #212121;
-    border-radius: 30px;
-    text-decoration: none;
-    color: #fff;
-}
