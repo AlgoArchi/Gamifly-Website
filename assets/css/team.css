@@ -25,10 +25,12 @@
     color: #9B8BFF;
     text-transform: uppercase;
     font-family: 'Sofia_Pro_Regular',serif;
+    font-size: 20px;
 }
 
-.text-warning{
+.text-warn{
     color: #FFD19A;
     text-transform: uppercase;
     font-family: 'Sofia_Pro_Regular',serif;
+    font-size: 18px;
 }
