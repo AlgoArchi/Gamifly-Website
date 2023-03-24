@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: "Sofia_Pro_Regular";
+    src: url("../fonts/Sofia_Pro_Font_Family/Sofia_Pro_Regular.otf");
+}
+
+#team {
+    background-image: url("../images/home-gradient.png");
+    background-color: #000;
+    background-position: top right;
+    background-size: cover;
+    width: 100%;
+    /* height: auto; */
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.text-purple{
+    color: #9B8BFF;
+    text-transform: uppercase;
+    font-family: 'Sofia_Pro_Regular',serif;
+}
+
+.text-warning{
+    color: #FFD19A;
+    text-transform: uppercase;
+    font-family: 'Sofia_Pro_Regular',serif;
+}

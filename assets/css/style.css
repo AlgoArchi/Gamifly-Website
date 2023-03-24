@@ -18,11 +18,16 @@
     src: url("../fonts/Sofia_Pro_Font_Family/Sofia_Pro_Bold.otf");
 }
 
+@font-face {
+    font-family: "Sofia_Pro_Regular";
+    src: url("../fonts/Sofia_Pro_Font_Family/Sofia_Pro_Regular.otf");
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Sofia_Pro_Black", sans-serif;
+    font-family: "Sofia_Pro_Regular", sans-serif;
 }
 
 .eurostile-bold{
