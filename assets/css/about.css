@@ -1,0 +1,10 @@
+#about{
+    background-color: #000;
+    min-height: 90vh;
+    background-image: url("../images/policy-bg.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+}
+
