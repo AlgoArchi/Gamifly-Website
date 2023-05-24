@@ -19,6 +19,7 @@
     object-fit: contain;
     object-position: center;
     border-radius: 50%;
+    transform: translateY(-15px);
 }
 
 .text-purple{

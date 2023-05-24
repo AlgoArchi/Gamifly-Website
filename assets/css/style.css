@@ -66,5 +66,5 @@ footer .social li a:hover {
     background-color: #000;
     width: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
