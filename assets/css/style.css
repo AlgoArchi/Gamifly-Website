@@ -38,12 +38,16 @@
     font-family: 'Eurostile_Black', sans-serif !important;
 }
 
+footer{
+    background-color: #000;
+}
+
 footer .social{
     padding-left: 0 !important;
 }
 
 footer .social li{
-    display: inline;
+    display: inline-block;
 }
 
 footer .social li a{
@@ -55,4 +59,12 @@ footer .social li a{
 
 footer .social li a:hover {
     color: #fff;
+}
+
+#spot-bg{
+    background-image: url(../images/spot-bg.png);
+    background-color: #000;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
 }
