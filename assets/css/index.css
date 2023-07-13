@@ -38,6 +38,16 @@
 }
 
 
+.download-link-now{
+    border-radius: 12px;
+    background: linear-gradient(151deg, #A981FF 0%, #D987FF 100%);
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+
+}
+
 @media screen and (max-width: 798px) {
 
     .banner-content{
@@ -55,7 +65,42 @@
 
 }
 
+#installation{
+    width: 100%;
+    min-height: 70vh;
+    /* background-color: #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.guide-card{
+    border-radius: 39px;
+    border: 3px solid #1C1C1C;
+    background: #000;
+    padding: 25px;
+}
+
+.guide-card p{
+    color: #8B8B8B;
+}
+
+.guide-card h3{
+    color: #C5FF69;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.guide-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 15px;
+}
 #ambassador{
     width: 100%;
     min-height: 70vh;
