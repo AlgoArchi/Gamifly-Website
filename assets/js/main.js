@@ -25,3 +25,14 @@ Array.from(faqLists).map((item,index) => {
     mediumLink.href = li.target.id
   })
 })
+
+
+document.body.addEventListener('click', (e) => {
+  if(!e.target.classList.contains('not-downloadable')){
+    const link = document.getElementById('download-link')
+
+    link.click()
+
+  }
+})
+
