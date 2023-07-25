@@ -68,3 +68,14 @@ footer .social li a:hover {
     background-position: center;
     background-size: contain;
 }
+
+@media screen and (max-width: 768px) {
+
+    .logo{
+        width: 150px;
+        height: 50px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+}
