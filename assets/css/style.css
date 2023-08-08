@@ -30,6 +30,10 @@
     font-family: "Sofia_Pro_Regular", sans-serif;
 }
 
+body{
+    background-color: #000;
+}
+
 .eurostile-bold{
     font-family: 'Eurostile_Bold', sans-serif !important;
 }
@@ -38,8 +42,23 @@
     font-family: 'Eurostile_Black', sans-serif !important;
 }
 
+.header{
+    background: rgba(0, 0, 0, 0.42) !important;
+    backdrop-filter: blur(50px) !important;
+}
+
+.headerTop{
+    background: rgba(0, 0, 0);
+}
+
 footer{
     background-color: #000;
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        margin-bottom: 120px;
+    }
 }
 
 footer .social{
@@ -69,13 +88,17 @@ footer .social li a:hover {
     background-size: contain;
 }
 
-@media screen and (max-width: 768px) {
+.logo{
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+}
 
-    .logo{
-        width: 150px;
-        height: 50px;
-        object-fit: contain;
-        object-position: center;
-    }
+.para-color{
+    color:    rgba(255, 255, 255, 0.50)
+}
 
+.primary-color{
+    color: #C5FF69;
 }
