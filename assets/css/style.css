@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: "Eurostile_Extd";
+    src: url("../fonts/Eurostile_Font_Family/Eurostile_Extd_Black.otf");
+}
+
+@font-face {
     font-family: "Sofia_Pro_Black";
     src: url("../fonts/Sofia_Pro_Font_Family/Sofia_Pro_Black.otf");
 }
@@ -32,8 +37,17 @@
 
 body{
     background-color: #000;
+    overflow-x: hidden !important;
 }
 
+:root {
+    --plyr-color-main: #9BFD00;
+    --plyr-captions-text-color: transparent;
+  }
+  
+.mt{
+    margin: 100px 0;
+}
 .eurostile-bold{
     font-family: 'Eurostile_Bold', sans-serif !important;
 }
@@ -42,13 +56,26 @@ body{
     font-family: 'Eurostile_Black', sans-serif !important;
 }
 
+.eurostile-extd{
+    font-family: 'Eurostile_Extd', sans-serif !important;
+}
+
+.fz-20{
+    font-size: 20px !important;
+}
+
+.fz-25{
+    font-size: 25px !important;
+}
+
 .header{
+    width: 100% !important;
     background: rgba(0, 0, 0, 0.42) !important;
     backdrop-filter: blur(50px) !important;
 }
 
 .headerTop{
-    background: rgba(0, 0, 0);
+    background: transparent !important;
 }
 
 footer{
@@ -56,8 +83,21 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+
+    .mt{
+        margin: 50px 0;
+    }
+
     footer{
         margin-bottom: 120px;
+    }
+
+    .fz-20{
+        font-size: 17px !important;
+    }
+    
+    .fz-25{
+        font-size: 22px !important;
     }
 }
 
@@ -100,5 +140,19 @@ footer .social li a:hover {
 }
 
 .primary-color{
-    color: #C5FF69;
+    color: #9BFD00;
+}
+
+.ytp-title{
+    display: none !important;
+}
+
+.ytp-title-enable-channel-logo .ytp-title-channel{
+    display: none !important;
+
+}
+
+.ytp-embed:not(.ad-showing) .ytp-title-text{
+    display: none !important;
+
 }

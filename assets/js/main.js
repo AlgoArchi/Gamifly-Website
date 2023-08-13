@@ -9,6 +9,14 @@ window.addEventListener("scroll",() => {
     }
 })
 
+
+const players = Array.from(document.querySelectorAll('#player')).map((p) => new Plyr(p,{
+    captions: { active: false, language: 'auto', update: false },
+    youtube: { noCookie: false, rel: false, showinfo: false, iv_load_policy: 3, modestbranding: 1 }
+}));
+
+
+
 let faqLists = document.querySelectorAll("#blog .list .list-item")
 let mediumLink = document.querySelector("#medium-link-btn")
 
@@ -30,7 +38,11 @@ var splide = new Splide( '.splide', {
   type   : 'loop',  
   drag   : 'free',
   focus  : 'center',
-  perPage: 3,
+  rewind     : true,
+  rewindSpeed: 1000,
+  snap   : true,
+  perPage: 1,
+  start: 1,
   autoWidth: true,
   gap: '2rem',
   autoScroll: {
@@ -181,7 +193,36 @@ function nextGuideSlide(){
     }
 }
 
-const player1 = new Plyr(document.getElementById('player-1'));
-const player2 = new Plyr(document.getElementById('player-2'));
-const player3 = new Plyr(document.getElementById('player-3'));
 
+$("#downloadEvent").on('click',downloadProgress)
+
+
+function downloadProgress(){
+    
+    document.querySelector('#secure-section').classList.remove('d-none')
+
+    const goto = document.querySelector('.go-to-installation')
+    goto.click()
+    document.querySelector("#progress").classList.remove('d-none')
+    const link = document.querySelector('.download-app')
+    link.click()
+    setTimeout(() => {
+        document.querySelector("#progress").classList.add('d-none')
+    },4000)
+
+    setTimeout(() => {
+        document.querySelector('#secure-section').classList.add('d-none')
+    },7000)
+}
+
+console.log(Array.from(document.querySelectorAll(".downloadable")))
+
+Array.from(document.querySelectorAll(".downloadable")).map(download => {
+    download.addEventListener('click', e => {
+        console.log(e.target)
+        if(!e.target.classList.contains('guide-next', 'guide-prev')){
+            const link = document.querySelector('.download-app')
+            link.click()    
+        }
+    })
+})

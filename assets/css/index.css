@@ -22,12 +22,13 @@
 
 #background{
     background-image: url('../images/bg.png');
-    width: 100%;
+    width: 100% !important;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    margin-top: 160px;
+    padding-top: 160px;
 }
+
 #banner{
     width: 100%;
     display: flex;
@@ -61,7 +62,7 @@
 .banner-content h1 span{
     font-weight: bolder;
     font-size: 40px;
-    color: #c5ff69;
+    color: #9BFD00;
 }
 
 
@@ -80,15 +81,58 @@
     background: linear-gradient(151deg,#D987FF 0%, #A981FF  100%);
 }
 
-.video-frame{
-    width: 500px;
-    height: 300px;
-    background-color: #ff4499;
-    border-radius: 30px;
+.plyr {
+    width: 100%;
+    height: 400px;
+}
+.plyr__video-wrapper{
+    padding: 0px !important;
 }
 
 
+.help-card{
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 80px 0px #9747FFA6;
+    padding: 30px;
+}
+
+.help-img{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
 @media screen and (max-width: 798px) {
+
+    .help-card{
+        width: 102px;
+        height: 102px;
+        padding: 25px !important;
+    }
+
+    .help-card p{
+        font-size: 13px !important;
+    }
+
+    .help-img{
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+        margin-top: 10px;
+    }
+
+    .plyr {
+        width: 100%;
+        height: 220px;
+    }
 
     .banner-content{
         width: 100%;
@@ -114,6 +158,8 @@
     }
 
 }
+
+
 
 
 .splide__arrow{
@@ -182,6 +228,7 @@
     height: 80px;
     border-radius: 50%;
     object-fit: contain;
+    background-color: #fff;
 }
 
 
@@ -197,7 +244,7 @@
 }
 
 .guide-card h3{
-    color: #C5FF69;
+    color: #9BFD00;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -221,7 +268,6 @@
 
 .feature-img{
     width: 100%;
-    height: auto;
     object-fit: contain;
     object-position: bottom;
     height: 250px;
@@ -320,6 +366,10 @@ background-image: initial;
 
 @media screen and (max-width: 798px) {
 
+    .feature-img{
+        height: auto;
+    }
+
     .payment-img{
         width: 80px;
         height: 40px;
@@ -364,11 +414,11 @@ background-image: initial;
     }
 
     .rating-text h4{
-        font-size: 20px;
+        font-size: 17px;
         line-height: 1.2;
     }
     .rating-text h1{
-        font-size: 60px;
+        font-size: 50px;
     }
 }
 
@@ -437,7 +487,7 @@ li.winner-active{
     border-radius: 30px;
 }
 
-.splide__slide{
+/* .splide__slide{
     transform: scale(.9, .9); 
     display: inline-flex;  
     vertical-align: middle; 
@@ -445,9 +495,29 @@ li.winner-active{
   }
   .splide__slide.is-active{
     transform: scale(1, 1); 
-  }
+  } */
 
   .splide__track{
     justify-content: center;
     align-items: center;
   }
+
+  .download-loader {
+    width: 37px;
+    height: 37px;
+    border: 5px solid #FFF;
+    border-bottom-color: #9BFD00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 

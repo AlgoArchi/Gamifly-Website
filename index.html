@@ -46,61 +46,69 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <header class="headerTop position-fixed top-0 z-3 w-100">
-        <div class="container d-flex justify-content-between align-items-center bg-none w-100  py-3 z-3">
+    <header class="headerTop w-100 position-fixed top-0 " style="z-index: 1000 !important;">
+        <div class="container d-flex justify-content-between align-items-center bg-none w-100  py-3" style="z-index: 1000 !important;">
             <article>
                 <a href="index.html" class="">
                     <img src="assets/images/logo.png" class="logo"  alt="LOGO">
                 </a>
             </article>
     
-            <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="download-app text-decoration-none text-white">
+            <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk"  class="download-app text-decoration-none text-white">
                 Download App
             </a>
         </div>
-        <div class="w-100 p-3 text-center text-white" style="background-color: rgba(107, 104, 104, 0.381);">
+        <div class="w-100 p-3 text-center text-white" style="background-color: rgba(107, 104, 104, 0.381);z-index: 1000 !important;">
             Banner Ads Section
         </div>
     </header>
 
     <section id="download" class="d-block d-md-none fixed-bottom w-100 bg-black pb-3">
-        <p class="primary-color text-center w-100 p-3" style="background: rgba(255, 255, 255, 0.05);
+        <p class="primary-color text-center w-100 p-2" style="background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(50px);">
             Sign up for Real Cash rewards
         </p>
-        <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="download-link-now mx-auto d-block text-center" style="width: 90% !important;">
-            Get Download Link Now
-        </a>
+        <div class="d-flex justify-content-center align-items-center gap-2 px-2">
+            <div class="position-relative me-4 mb-4 d-none" id="progress">
+                <span class="download-loader z-4 position-absolute top-0">
+                </span>
+                <i class="fas fa-long-arrow-alt-down fs-5 text-white z-0  position-absolute top-0 " style="margin: 8px 0 0 12px;"></i>
+            </div>
+            <a href="javascript:void(0)" id="downloadEvent" class="ms-3 download-link-now mx-auto d-flex justify-content-center align-items-center text-center" style="width: 90% !important;height:40px !important;">
+                Download App
+            </a>
+        </div>
     </section>
 
-    <section id="background">
-        <section id="banner" style="margin: 100px 0;">
+    <a href="#installation" class="d-none go-to-installation"></a>
+    <section id="background" class="w-100">
+        <section id="banner" class="mt">
             <div class="banner-container">
                 <div class="text-center banner-content">
-                    <h1 class="text-white main-title eurostile-black text-uppercase">
-                        play skill based game <br>
-                        earn <span class="eurostile-black">real cash</span>
+                    <h1 class="text-white main-title eurostile-extd text-uppercase">
+                        PLAY SKILL BASED GAMES <br> WIN 
+                        <span class="eurostile-extd">AMAZING PRIZES </span>
                     </h1>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 d-block mx-auto">
+                        <div class="col-12 d-block mx-auto mb-4">
                             <section class="splide overflow-hidden" aria-label="Video Slide">
                                 <div class="splide__track">
                                         <ul class="splide__list">
                                             <li class="splide__slide">
-                                                <video id="player-1" playsinline controls data-poster="">
-                                                    <source src="assets/videos/vd.mp4" type="video/mp4" />
-                                                  </video>                                            </li>
+                                                <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="MQfEI7a39Mo"></div>
                                             <li class="splide__slide">
-                                                <video id="player-2" playsinline controls data-poster="">
-                                                    <source src="assets/videos/vd.mp4" type="video/mp4" />
-                                                  </video>    
+                                                <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="rrRBF7LVA_Q"></div>
                                             </li>
                                             <li class="splide__slide">
-                                                <video id="player-3" playsinline controls data-poster="">
-                                                    <source src="assets/videos/vd.mp4" type="video/mp4" />
-                                                  </video>    
+                                                <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="MQfEI7a39Mo"></div>
                                             </li>
                                         </ul>
                                 </div>
@@ -150,62 +158,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="">
-                    <p class="d-none d-md-block text-center fw-bold para-color my-3 change-text">
-                        Download Now, get sign up bonus
-                    </p>
-                    <p class="d-block d-md-none p-2 text-center primary-color w-full fw-bold para-color my-3 change-text">
-                        Sign up for Real Cash rewards
-                    </p>
-                    <br>
-                    <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="download-link-now">
-                        Get Download Link Now
-                    </a>
-                </div>
-                <div class="d-flex flex-wrap justify-content-center align-items-center w-100 w-md-50 mt-3">
-                    <p class="para-color border-end border-1 p-3 mx-3" style="border-color: rgb(255,255,255,.5);">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 23 22" fill="none">
-                            <path d="M22.9823 8.80944C23.0972 8.23298 22.6375 7.54123 22.063 7.54123L15.513 6.61889L12.5253 0.623679C12.4104 0.393094 12.2955 0.277802 12.0657 0.162509C11.4911 -0.183368 10.8017 0.0472169 10.4569 0.623679L7.58415 6.61889L1.0342 7.54123C0.689468 7.54123 0.459645 7.65652 0.344734 7.8871C-0.114911 8.34827 -0.114911 9.04003 0.344734 9.5012L5.0561 14.1129L3.90699 20.6846C3.90699 20.9152 3.90699 21.1457 4.0219 21.3763C4.36663 21.9528 5.0561 22.1834 5.63066 21.8375L11.4911 18.7246L17.3516 21.8375C17.4665 21.9528 17.6964 21.9528 17.9262 21.9528C18.0411 21.9528 18.0411 21.9528 18.156 21.9528C18.7306 21.8375 19.1902 21.261 19.0753 20.5693L17.9262 13.9976L22.6375 9.38591C22.8674 9.27061 22.9823 9.04003 22.9823 8.80944Z" fill="#ccc"/>
-                          </svg> 4.6 <br>
-                        Ratings
-                    </p>
-                    <p class="para-color border-end border-1 p-3 mx-3" style="border-color: rgb(255,255,255,.5);">
-                        10,000+ <br>
-                        Contests
-                    </p>
-                    <p class="para-color border-end border-1 p-3 mx-3" style="border-color: rgb(255,255,255,.5);">
-                        1M+ <br>
-                        Winners
-                    </p>
-                    <p class="para-color border-end border-1 p-3 mx-3" style="border-color: rgb(255,255,255,.5);">
-                        1.8M+ <br>
-                        Players
-                    </p>
-                    <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="bg-white border rounded-4 mx-3 d-flex justify-content-center align-items-center px-3" style="height: 70px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="163" height="32" viewBox="0 0 163 32" fill="none">
-                            <g clip-path="url(#clip0_373_10685)">
-                              <path d="M159.36 13.46L156.36 21.1H156.27L153.14 13.46H150.31L155 24.14L152.32 30.08H155.07L162.3 13.46H159.36ZM138.16 7.12001H135.54V24.74H138.16V7.12001ZM128.3 7.12001H122V24.74H124.64V18.07H128.31C129.05 18.0953 129.788 17.9734 130.48 17.7114C131.172 17.4493 131.806 17.0523 132.344 16.5434C132.881 16.0345 133.313 15.4239 133.612 14.7469C133.912 14.07 134.075 13.3402 134.09 12.6C134.075 11.8585 133.912 11.1274 133.612 10.4493C133.311 9.77114 132.879 9.15939 132.341 8.64957C131.802 8.13975 131.167 7.742 130.474 7.47943C129.78 7.21686 129.041 7.09469 128.3 7.12001ZM128.37 15.61H124.64V9.61001H128.38C129.176 9.61001 129.939 9.92609 130.501 10.4887C131.064 11.0513 131.38 11.8144 131.38 12.61C131.38 13.4057 131.064 14.1687 130.501 14.7313C129.939 15.2939 129.176 15.61 128.38 15.61H128.37ZM144.62 13.08C143.66 13.025 142.705 13.2511 141.872 13.7307C141.039 14.2103 140.364 14.9225 139.93 15.78L142.27 16.78C142.502 16.356 142.853 16.009 143.279 15.7816C143.705 15.5542 144.189 15.4564 144.67 15.5C145 15.4669 145.334 15.4994 145.652 15.5957C145.97 15.6921 146.265 15.8502 146.522 16.0612C146.778 16.2721 146.991 16.5317 147.147 16.825C147.302 17.1182 147.399 17.4394 147.43 17.77V17.95C146.592 17.4965 145.653 17.2594 144.7 17.26C142.19 17.26 139.63 18.64 139.63 21.26C139.63 23.62 141.68 25.14 144 25.14C144.66 25.1819 145.319 25.0441 145.908 24.7413C146.496 24.4384 146.991 23.9818 147.34 23.42H147.44V24.78H150V18C150 14.87 147.66 13.13 144.64 13.13L144.62 13.08ZM144.31 22.74C143.45 22.74 142.25 22.3 142.25 21.24C142.25 19.88 143.74 19.36 145.04 19.36C145.878 19.3376 146.708 19.5414 147.44 19.95C147.343 20.7147 146.973 21.4186 146.398 21.9315C145.822 22.4444 145.081 22.7316 144.31 22.74ZM49.49 25.12C47.0016 25.1282 44.6102 24.1557 42.8339 22.413C41.0576 20.6704 40.0394 18.2981 40 15.81C40.0394 13.322 41.0576 10.9496 42.8339 9.207C44.6102 7.46437 47.0016 6.49181 49.49 6.50001C50.6757 6.48027 51.8534 6.69742 52.9541 7.13872C54.0548 7.58003 55.0563 8.23663 55.9 9.07001L54.09 10.86C52.8623 9.65707 51.2088 8.98845 49.49 9.00001C47.6945 9.00001 45.9725 9.71328 44.7029 10.9829C43.4333 12.2525 42.72 13.9745 42.72 15.77C42.72 17.5655 43.4333 19.2875 44.7029 20.5571C45.9725 21.8267 47.6945 22.54 49.49 22.54C50.3638 22.5759 51.2354 22.428 52.0484 22.1059C52.8615 21.7837 53.5979 21.2946 54.21 20.67C55.0239 19.7925 55.5142 18.6638 55.6 17.47H49.49V15H58.09C58.1838 15.5247 58.2273 16.0571 58.22 16.59C58.3064 18.8037 57.5117 20.9613 56.01 22.59C55.1622 23.4464 54.1433 24.1144 53.0198 24.5504C51.8964 24.9863 50.6936 25.1804 49.49 25.12ZM71.52 19.12C71.5528 19.9199 71.4237 20.7182 71.1402 21.4669C70.8567 22.2156 70.4249 22.8993 69.8705 23.4768C69.3161 24.0544 68.6508 24.514 67.9143 24.8279C67.1779 25.1419 66.3856 25.3037 65.585 25.3037C64.7844 25.3037 63.9921 25.1419 63.2557 24.8279C62.5192 24.514 61.8539 24.0544 61.2995 23.4768C60.7451 22.8993 60.3133 22.2156 60.0298 21.4669C59.7463 20.7182 59.6172 19.9199 59.65 19.12C59.6172 18.3201 59.7463 17.5218 60.0298 16.7731C60.3133 16.0244 60.7451 15.3408 61.2995 14.7632C61.8539 14.1856 62.5192 13.726 63.2557 13.4121C63.9921 13.0982 64.7844 12.9363 65.585 12.9363C66.3856 12.9363 67.1779 13.0982 67.9143 13.4121C68.6508 13.726 69.3161 14.1856 69.8705 14.7632C70.4249 15.3408 70.8567 16.0244 71.1402 16.7731C71.4237 17.5218 71.5528 18.3201 71.52 19.12ZM68.92 19.12C68.9641 18.6555 68.9107 18.1868 68.7631 17.7442C68.6156 17.3015 68.3772 16.8945 68.0632 16.5493C67.7493 16.2041 67.3666 15.9283 66.9399 15.7396C66.5131 15.5508 66.0516 15.4534 65.585 15.4534C65.1184 15.4534 64.6569 15.5508 64.2301 15.7396C63.8034 15.9283 63.4207 16.2041 63.1068 16.5493C62.7928 16.8945 62.5544 17.3015 62.4069 17.7442C62.2593 18.1868 62.2059 18.6555 62.25 19.12C62.2059 19.5846 62.2593 20.0532 62.4069 20.4959C62.5544 20.9386 62.7928 21.3456 63.1068 21.6907C63.4207 22.0359 63.8034 22.3117 64.2301 22.5005C64.6569 22.6892 65.1184 22.7867 65.585 22.7867C66.0516 22.7867 66.5131 22.6892 66.9399 22.5005C67.3666 22.3117 67.7493 22.0359 68.0632 21.6907C68.3772 21.3456 68.6156 20.9386 68.7631 20.4959C68.9107 20.0532 68.9641 19.5846 68.92 19.12ZM84.82 19.12C84.82 20.6927 84.1952 22.2011 83.0831 23.3132C81.9711 24.4252 80.4627 25.05 78.89 25.05C77.3173 25.05 75.8089 24.4252 74.6969 23.3132C73.5848 22.2011 72.96 20.6927 72.96 19.12C72.96 17.5473 73.5848 16.039 74.6969 14.9269C75.8089 13.8148 77.3173 13.19 78.89 13.19C80.4627 13.19 81.9711 13.8148 83.0831 14.9269C84.1952 16.039 84.82 17.5473 84.82 19.12ZM82.23 19.12C82.2741 18.6555 82.2207 18.1868 82.0731 17.7442C81.9256 17.3015 81.6872 16.8945 81.3732 16.5493C81.0593 16.2041 80.6766 15.9283 80.2499 15.7396C79.8231 15.5508 79.3616 15.4534 78.895 15.4534C78.4284 15.4534 77.9669 15.5508 77.5401 15.7396C77.1134 15.9283 76.7307 16.2041 76.4168 16.5493C76.1028 16.8945 75.8644 17.3015 75.7169 17.7442C75.5693 18.1868 75.5159 18.6555 75.56 19.12C75.5159 19.5846 75.5693 20.0532 75.7169 20.4959C75.8644 20.9386 76.1028 21.3456 76.4168 21.6907C76.7307 22.0359 77.1134 22.3117 77.5401 22.5005C77.9669 22.6892 78.4284 22.7867 78.895 22.7867C79.3616 22.7867 79.8231 22.6892 80.2499 22.5005C80.6766 22.3117 81.0593 22.0359 81.3732 21.6907C81.6872 21.3456 81.9256 20.9386 82.0731 20.4959C82.2207 20.0532 82.2741 19.5846 82.23 19.12ZM97.8 13.49V24.26C97.8 28.68 95.17 30.5 92.07 30.5C90.9337 30.5096 89.82 30.1822 88.8696 29.5593C87.9192 28.9364 87.1746 28.0458 86.73 27L89 26C89.2355 26.6105 89.6456 27.1381 90.1791 27.517C90.7127 27.8958 91.346 28.109 92 28.13C94 28.13 95.22 26.9 95.22 24.61V23.75H95.12C94.7278 24.1877 94.2464 24.5364 93.7083 24.7727C93.1701 25.009 92.5877 25.1274 92 25.12C90.4087 25.12 88.8826 24.4879 87.7574 23.3627C86.6321 22.2374 86 20.7113 86 19.12C86 17.5287 86.6321 16.0026 87.7574 14.8774C88.8826 13.7522 90.4087 13.12 92 13.12C92.5916 13.107 93.1791 13.2197 93.7239 13.4507C94.2686 13.6817 94.7581 14.0257 95.16 14.46H95.26V13.46H97.8V13.49ZM95.47 19.15C95.5067 18.6974 95.4522 18.2421 95.3095 17.811C95.1669 17.3799 94.9392 16.9819 94.6398 16.6405C94.3404 16.2991 93.9754 16.0214 93.5666 15.8238C93.1578 15.6261 92.7135 15.5126 92.26 15.49C91.7976 15.5053 91.343 15.6127 90.9226 15.8058C90.5022 15.9989 90.1245 16.2739 89.8117 16.6147C89.4988 16.9555 89.2571 17.3552 89.1005 17.7905C88.944 18.2259 88.8758 18.688 88.9 19.15C88.8786 19.6089 88.949 20.0674 89.1071 20.4987C89.2652 20.93 89.5079 21.3253 89.8208 21.6616C90.1338 21.9979 90.5108 22.2682 90.9296 22.4568C91.3485 22.6455 91.8008 22.7485 92.26 22.76C92.7108 22.7425 93.1534 22.6342 93.5613 22.4415C93.9692 22.2488 94.334 21.9757 94.6337 21.6386C94.9335 21.3015 95.1621 20.9073 95.3058 20.4796C95.4495 20.052 95.5054 19.5998 95.47 19.15ZM102.43 7.14001V24.75H99.79V7.14001H102.43ZM112.83 21.1L114.89 22.46C114.34 23.2808 113.596 23.953 112.724 24.4171C111.851 24.8811 110.878 25.1226 109.89 25.12C109.104 25.1313 108.324 24.9829 107.597 24.684C106.87 24.385 106.211 23.9416 105.661 23.3807C105.11 22.8198 104.679 22.153 104.394 21.4206C104.108 20.6883 103.974 19.9056 104 19.12C103.883 17.7695 104.267 16.423 105.079 15.3374C105.891 14.2518 107.074 13.5029 108.402 13.2335C109.731 12.9641 111.112 13.193 112.283 13.8765C113.453 14.5601 114.332 15.6505 114.75 16.94L115.02 17.63L107.02 20.94C107.269 21.5003 107.681 21.9731 108.201 22.2975C108.722 22.6219 109.327 22.783 109.94 22.76C110.523 22.7509 111.094 22.5937 111.599 22.3034C112.105 22.013 112.528 21.5989 112.83 21.1ZM106.52 18.94L111.9 16.72C111.692 16.3125 111.369 15.9749 110.97 15.7492C110.572 15.5235 110.117 15.4194 109.66 15.45C109.223 15.4691 108.795 15.575 108.4 15.7615C108.004 15.9481 107.65 16.2115 107.358 16.5364C107.066 16.8613 106.841 17.2412 106.697 17.6539C106.553 18.0666 106.493 18.5038 106.52 18.94Z" fill="#5F6368"/>
-                              <path d="M13.5401 15.28L0.120117 29.34C0.270806 29.8741 0.541615 30.3667 0.911843 30.7801C1.28207 31.1934 1.74192 31.5167 2.25622 31.7251C2.77053 31.9335 3.32569 32.0216 3.87925 31.9826C4.43281 31.9436 4.97013 31.7785 5.45012 31.5L20.5501 22.9L13.5401 15.28Z" fill="#EA4335"/>
-                              <path d="M27.11 12.89L20.58 9.15002L13.23 15.6L20.61 22.88L27.09 19.18C27.6641 18.8794 28.1449 18.4275 28.4804 17.8731C28.816 17.3187 28.9933 16.683 28.9933 16.035C28.9933 15.387 28.816 14.7514 28.4804 14.197C28.1449 13.6426 27.6641 13.1906 27.09 12.89H27.11Z" fill="#FBBC04"/>
-                              <path d="M0.120039 2.66003C0.0389183 2.95992 -0.00144445 3.26937 3.94718e-05 3.58003V28.42C0.000850852 28.7306 0.0411748 29.0397 0.120039 29.34L14 15.64L0.120039 2.66003Z" fill="#4285F4"/>
-                              <path d="M13.6401 16L20.5801 9.15001L5.50012 0.510007C4.9328 0.177748 4.28757 0.00177385 3.63012 7.15214e-06C2.8361 -0.00156636 2.06334 0.256535 1.42965 0.734967C0.795948 1.2134 0.336072 1.88592 0.120117 2.65001L13.6401 16Z" fill="#34A853"/>
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_373_10685">
-                                <rect width="162.28" height="32" fill="white"/>
-                              </clipPath>
-                            </defs>
-                          </svg>
-                    </a>
-                </div>
-                <div class="container my-5 d-none d-md-block">
-                    <div class="row">
-                        <div class="col-12 col-md-8 mx-auto">
-                            <div class="d-flex justify-content-center align-items-center w-100 gap-4">
-                                    <img src="./assets/images/help-1.png" width="200px" height="200px" class="object-fit-contain" alt="">
-                                    <img src="./assets/images/help-2.png" width="200px" height="200px" class="object-fit-contain" alt="">
-                                    <img src="./assets/images/help-3.png" width="200px" height="200px" class="object-fit-contain" alt="">
-                                    <img src="./assets/images/help-4.png" width="200px" height="200px" class="object-fit-contain" alt="">
+                <div class="downloadable container-fluid">
+                    <div class="text-center my-5">
+                        <p class="d-none d-md-block text-center fw-bold para-color my-3  fz-20">
+                            Download Now, get sign up bonus
+                        </p>
+                        <br>
+                        <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="download-link-now">
+                            Download App
+                        </a>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center w-100 w-md-50 my-3">
+                        <p class="text-white fz-20 border-end border-1 px-3 py-0 mx-1" style="border-color: rgb(255,255,255,.5);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 23 22" fill="none">
+                                <path d="M22.9823 8.80944C23.0972 8.23298 22.6375 7.54123 22.063 7.54123L15.513 6.61889L12.5253 0.623679C12.4104 0.393094 12.2955 0.277802 12.0657 0.162509C11.4911 -0.183368 10.8017 0.0472169 10.4569 0.623679L7.58415 6.61889L1.0342 7.54123C0.689468 7.54123 0.459645 7.65652 0.344734 7.8871C-0.114911 8.34827 -0.114911 9.04003 0.344734 9.5012L5.0561 14.1129L3.90699 20.6846C3.90699 20.9152 3.90699 21.1457 4.0219 21.3763C4.36663 21.9528 5.0561 22.1834 5.63066 21.8375L11.4911 18.7246L17.3516 21.8375C17.4665 21.9528 17.6964 21.9528 17.9262 21.9528C18.0411 21.9528 18.0411 21.9528 18.156 21.9528C18.7306 21.8375 19.1902 21.261 19.0753 20.5693L17.9262 13.9976L22.6375 9.38591C22.8674 9.27061 22.9823 9.04003 22.9823 8.80944Z" fill="#ccc"/>
+                              </svg> 4.6 <br>
+                                 Rating
+                        </p>
+                        <p class="text-white fz-20 border-end border-1 px-3 py-0 mx-1" style="border-color: rgb(255,255,255,.5);">
+                            10,000+ <br>
+                            Contests
+                        </p>
+                        <p class="text-white fz-20 border-end border-1 px-3 py-0 mx-1" style="border-color: rgb(255,255,255,.5);">
+                            1M+ <br>
+                            Winners
+                        </p>
+                        <p class="text-white fz-20 px-3 py-0 mx-1 me-1" style="border-color: rgb(255,255,255,.5);">
+                            1.8M+ <br>
+                            Players
+                        </p>
+                        <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="bg-white border rounded-4 mx-1 d-flex justify-content-center align-items-center px-3" style="height: 70px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="163" height="32" viewBox="0 0 163 32" fill="none">
+                                <g clip-path="url(#clip0_373_10685)">
+                                  <path d="M159.36 13.46L156.36 21.1H156.27L153.14 13.46H150.31L155 24.14L152.32 30.08H155.07L162.3 13.46H159.36ZM138.16 7.12001H135.54V24.74H138.16V7.12001ZM128.3 7.12001H122V24.74H124.64V18.07H128.31C129.05 18.0953 129.788 17.9734 130.48 17.7114C131.172 17.4493 131.806 17.0523 132.344 16.5434C132.881 16.0345 133.313 15.4239 133.612 14.7469C133.912 14.07 134.075 13.3402 134.09 12.6C134.075 11.8585 133.912 11.1274 133.612 10.4493C133.311 9.77114 132.879 9.15939 132.341 8.64957C131.802 8.13975 131.167 7.742 130.474 7.47943C129.78 7.21686 129.041 7.09469 128.3 7.12001ZM128.37 15.61H124.64V9.61001H128.38C129.176 9.61001 129.939 9.92609 130.501 10.4887C131.064 11.0513 131.38 11.8144 131.38 12.61C131.38 13.4057 131.064 14.1687 130.501 14.7313C129.939 15.2939 129.176 15.61 128.38 15.61H128.37ZM144.62 13.08C143.66 13.025 142.705 13.2511 141.872 13.7307C141.039 14.2103 140.364 14.9225 139.93 15.78L142.27 16.78C142.502 16.356 142.853 16.009 143.279 15.7816C143.705 15.5542 144.189 15.4564 144.67 15.5C145 15.4669 145.334 15.4994 145.652 15.5957C145.97 15.6921 146.265 15.8502 146.522 16.0612C146.778 16.2721 146.991 16.5317 147.147 16.825C147.302 17.1182 147.399 17.4394 147.43 17.77V17.95C146.592 17.4965 145.653 17.2594 144.7 17.26C142.19 17.26 139.63 18.64 139.63 21.26C139.63 23.62 141.68 25.14 144 25.14C144.66 25.1819 145.319 25.0441 145.908 24.7413C146.496 24.4384 146.991 23.9818 147.34 23.42H147.44V24.78H150V18C150 14.87 147.66 13.13 144.64 13.13L144.62 13.08ZM144.31 22.74C143.45 22.74 142.25 22.3 142.25 21.24C142.25 19.88 143.74 19.36 145.04 19.36C145.878 19.3376 146.708 19.5414 147.44 19.95C147.343 20.7147 146.973 21.4186 146.398 21.9315C145.822 22.4444 145.081 22.7316 144.31 22.74ZM49.49 25.12C47.0016 25.1282 44.6102 24.1557 42.8339 22.413C41.0576 20.6704 40.0394 18.2981 40 15.81C40.0394 13.322 41.0576 10.9496 42.8339 9.207C44.6102 7.46437 47.0016 6.49181 49.49 6.50001C50.6757 6.48027 51.8534 6.69742 52.9541 7.13872C54.0548 7.58003 55.0563 8.23663 55.9 9.07001L54.09 10.86C52.8623 9.65707 51.2088 8.98845 49.49 9.00001C47.6945 9.00001 45.9725 9.71328 44.7029 10.9829C43.4333 12.2525 42.72 13.9745 42.72 15.77C42.72 17.5655 43.4333 19.2875 44.7029 20.5571C45.9725 21.8267 47.6945 22.54 49.49 22.54C50.3638 22.5759 51.2354 22.428 52.0484 22.1059C52.8615 21.7837 53.5979 21.2946 54.21 20.67C55.0239 19.7925 55.5142 18.6638 55.6 17.47H49.49V15H58.09C58.1838 15.5247 58.2273 16.0571 58.22 16.59C58.3064 18.8037 57.5117 20.9613 56.01 22.59C55.1622 23.4464 54.1433 24.1144 53.0198 24.5504C51.8964 24.9863 50.6936 25.1804 49.49 25.12ZM71.52 19.12C71.5528 19.9199 71.4237 20.7182 71.1402 21.4669C70.8567 22.2156 70.4249 22.8993 69.8705 23.4768C69.3161 24.0544 68.6508 24.514 67.9143 24.8279C67.1779 25.1419 66.3856 25.3037 65.585 25.3037C64.7844 25.3037 63.9921 25.1419 63.2557 24.8279C62.5192 24.514 61.8539 24.0544 61.2995 23.4768C60.7451 22.8993 60.3133 22.2156 60.0298 21.4669C59.7463 20.7182 59.6172 19.9199 59.65 19.12C59.6172 18.3201 59.7463 17.5218 60.0298 16.7731C60.3133 16.0244 60.7451 15.3408 61.2995 14.7632C61.8539 14.1856 62.5192 13.726 63.2557 13.4121C63.9921 13.0982 64.7844 12.9363 65.585 12.9363C66.3856 12.9363 67.1779 13.0982 67.9143 13.4121C68.6508 13.726 69.3161 14.1856 69.8705 14.7632C70.4249 15.3408 70.8567 16.0244 71.1402 16.7731C71.4237 17.5218 71.5528 18.3201 71.52 19.12ZM68.92 19.12C68.9641 18.6555 68.9107 18.1868 68.7631 17.7442C68.6156 17.3015 68.3772 16.8945 68.0632 16.5493C67.7493 16.2041 67.3666 15.9283 66.9399 15.7396C66.5131 15.5508 66.0516 15.4534 65.585 15.4534C65.1184 15.4534 64.6569 15.5508 64.2301 15.7396C63.8034 15.9283 63.4207 16.2041 63.1068 16.5493C62.7928 16.8945 62.5544 17.3015 62.4069 17.7442C62.2593 18.1868 62.2059 18.6555 62.25 19.12C62.2059 19.5846 62.2593 20.0532 62.4069 20.4959C62.5544 20.9386 62.7928 21.3456 63.1068 21.6907C63.4207 22.0359 63.8034 22.3117 64.2301 22.5005C64.6569 22.6892 65.1184 22.7867 65.585 22.7867C66.0516 22.7867 66.5131 22.6892 66.9399 22.5005C67.3666 22.3117 67.7493 22.0359 68.0632 21.6907C68.3772 21.3456 68.6156 20.9386 68.7631 20.4959C68.9107 20.0532 68.9641 19.5846 68.92 19.12ZM84.82 19.12C84.82 20.6927 84.1952 22.2011 83.0831 23.3132C81.9711 24.4252 80.4627 25.05 78.89 25.05C77.3173 25.05 75.8089 24.4252 74.6969 23.3132C73.5848 22.2011 72.96 20.6927 72.96 19.12C72.96 17.5473 73.5848 16.039 74.6969 14.9269C75.8089 13.8148 77.3173 13.19 78.89 13.19C80.4627 13.19 81.9711 13.8148 83.0831 14.9269C84.1952 16.039 84.82 17.5473 84.82 19.12ZM82.23 19.12C82.2741 18.6555 82.2207 18.1868 82.0731 17.7442C81.9256 17.3015 81.6872 16.8945 81.3732 16.5493C81.0593 16.2041 80.6766 15.9283 80.2499 15.7396C79.8231 15.5508 79.3616 15.4534 78.895 15.4534C78.4284 15.4534 77.9669 15.5508 77.5401 15.7396C77.1134 15.9283 76.7307 16.2041 76.4168 16.5493C76.1028 16.8945 75.8644 17.3015 75.7169 17.7442C75.5693 18.1868 75.5159 18.6555 75.56 19.12C75.5159 19.5846 75.5693 20.0532 75.7169 20.4959C75.8644 20.9386 76.1028 21.3456 76.4168 21.6907C76.7307 22.0359 77.1134 22.3117 77.5401 22.5005C77.9669 22.6892 78.4284 22.7867 78.895 22.7867C79.3616 22.7867 79.8231 22.6892 80.2499 22.5005C80.6766 22.3117 81.0593 22.0359 81.3732 21.6907C81.6872 21.3456 81.9256 20.9386 82.0731 20.4959C82.2207 20.0532 82.2741 19.5846 82.23 19.12ZM97.8 13.49V24.26C97.8 28.68 95.17 30.5 92.07 30.5C90.9337 30.5096 89.82 30.1822 88.8696 29.5593C87.9192 28.9364 87.1746 28.0458 86.73 27L89 26C89.2355 26.6105 89.6456 27.1381 90.1791 27.517C90.7127 27.8958 91.346 28.109 92 28.13C94 28.13 95.22 26.9 95.22 24.61V23.75H95.12C94.7278 24.1877 94.2464 24.5364 93.7083 24.7727C93.1701 25.009 92.5877 25.1274 92 25.12C90.4087 25.12 88.8826 24.4879 87.7574 23.3627C86.6321 22.2374 86 20.7113 86 19.12C86 17.5287 86.6321 16.0026 87.7574 14.8774C88.8826 13.7522 90.4087 13.12 92 13.12C92.5916 13.107 93.1791 13.2197 93.7239 13.4507C94.2686 13.6817 94.7581 14.0257 95.16 14.46H95.26V13.46H97.8V13.49ZM95.47 19.15C95.5067 18.6974 95.4522 18.2421 95.3095 17.811C95.1669 17.3799 94.9392 16.9819 94.6398 16.6405C94.3404 16.2991 93.9754 16.0214 93.5666 15.8238C93.1578 15.6261 92.7135 15.5126 92.26 15.49C91.7976 15.5053 91.343 15.6127 90.9226 15.8058C90.5022 15.9989 90.1245 16.2739 89.8117 16.6147C89.4988 16.9555 89.2571 17.3552 89.1005 17.7905C88.944 18.2259 88.8758 18.688 88.9 19.15C88.8786 19.6089 88.949 20.0674 89.1071 20.4987C89.2652 20.93 89.5079 21.3253 89.8208 21.6616C90.1338 21.9979 90.5108 22.2682 90.9296 22.4568C91.3485 22.6455 91.8008 22.7485 92.26 22.76C92.7108 22.7425 93.1534 22.6342 93.5613 22.4415C93.9692 22.2488 94.334 21.9757 94.6337 21.6386C94.9335 21.3015 95.1621 20.9073 95.3058 20.4796C95.4495 20.052 95.5054 19.5998 95.47 19.15ZM102.43 7.14001V24.75H99.79V7.14001H102.43ZM112.83 21.1L114.89 22.46C114.34 23.2808 113.596 23.953 112.724 24.4171C111.851 24.8811 110.878 25.1226 109.89 25.12C109.104 25.1313 108.324 24.9829 107.597 24.684C106.87 24.385 106.211 23.9416 105.661 23.3807C105.11 22.8198 104.679 22.153 104.394 21.4206C104.108 20.6883 103.974 19.9056 104 19.12C103.883 17.7695 104.267 16.423 105.079 15.3374C105.891 14.2518 107.074 13.5029 108.402 13.2335C109.731 12.9641 111.112 13.193 112.283 13.8765C113.453 14.5601 114.332 15.6505 114.75 16.94L115.02 17.63L107.02 20.94C107.269 21.5003 107.681 21.9731 108.201 22.2975C108.722 22.6219 109.327 22.783 109.94 22.76C110.523 22.7509 111.094 22.5937 111.599 22.3034C112.105 22.013 112.528 21.5989 112.83 21.1ZM106.52 18.94L111.9 16.72C111.692 16.3125 111.369 15.9749 110.97 15.7492C110.572 15.5235 110.117 15.4194 109.66 15.45C109.223 15.4691 108.795 15.575 108.4 15.7615C108.004 15.9481 107.65 16.2115 107.358 16.5364C107.066 16.8613 106.841 17.2412 106.697 17.6539C106.553 18.0666 106.493 18.5038 106.52 18.94Z" fill="#5F6368"/>
+                                  <path d="M13.5401 15.28L0.120117 29.34C0.270806 29.8741 0.541615 30.3667 0.911843 30.7801C1.28207 31.1934 1.74192 31.5167 2.25622 31.7251C2.77053 31.9335 3.32569 32.0216 3.87925 31.9826C4.43281 31.9436 4.97013 31.7785 5.45012 31.5L20.5501 22.9L13.5401 15.28Z" fill="#EA4335"/>
+                                  <path d="M27.11 12.89L20.58 9.15002L13.23 15.6L20.61 22.88L27.09 19.18C27.6641 18.8794 28.1449 18.4275 28.4804 17.8731C28.816 17.3187 28.9933 16.683 28.9933 16.035C28.9933 15.387 28.816 14.7514 28.4804 14.197C28.1449 13.6426 27.6641 13.1906 27.09 12.89H27.11Z" fill="#FBBC04"/>
+                                  <path d="M0.120039 2.66003C0.0389183 2.95992 -0.00144445 3.26937 3.94718e-05 3.58003V28.42C0.000850852 28.7306 0.0411748 29.0397 0.120039 29.34L14 15.64L0.120039 2.66003Z" fill="#4285F4"/>
+                                  <path d="M13.6401 16L20.5801 9.15001L5.50012 0.510007C4.9328 0.177748 4.28757 0.00177385 3.63012 7.15214e-06C2.8361 -0.00156636 2.06334 0.256535 1.42965 0.734967C0.795948 1.2134 0.336072 1.88592 0.120117 2.65001L13.6401 16Z" fill="#34A853"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_373_10685">
+                                    <rect width="162.28" height="32" fill="white"/>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                        </a>
+                    </div>
+                    <div class="container-fluid my-1">
+                        <div class="row">
+                            <div class="col-12 col-md-8 mx-auto">
+                                <div class="d-flex flex-wrap flex-md-nowrap justify-content-center align-items-center w-100 gap-4 mt-4">
+                                    <div class="help-card">
+                                            <img src="assets/images/help-1.png" class="help-img"  alt="">
+                                            
+                                            <p class=" text-white mt-3 text-center  fw-lighter">
+                                                no BOTS <span style="visibility: hidden;">helworld</span>
+                                            </p>
+                                    </div> 
+                                    <div class="help-card">
+                                        <img src="assets/images/help-2.png" class="help-img" alt="">
+                                            
+                                            
+                                            <p class="text-uppercase text-white mt-3 text-center  fw-lighter px-1">
+                                               secure  payment 
+                                            </p>
+                                    </div> 
+                                    <div class="help-card">
+                                        <img src="assets/images/help-3.png" class="help-img" alt="">
+                                            
+                                            
+                                            <p class="text-uppercase text-white mt-3 text-center  fw-lighter">
+                                                Instant withdraw
+                                            </p>
+                                    </div> 
+                                    <div class="help-card">
+                                        <img src="assets/images/help-4.png" class="help-img" alt="">
+                                            
+                                            <p class="text-uppercase text-white mt-3 text-center">
+                                                Customer Support
+                                            </p>
+                                    </div>    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -213,14 +246,14 @@
             </div>
         </section>
 
-        <section id="instantly" style="margin: 100px 0;">
+        <section id="instantly" class="mt">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <p class="text-center fz-20 text-uppercase primary-color my-2">
                             instantly
                         </p>
-                        <h1 class="text-white main-title eurostile-black text-uppercase text-center">
+                        <h1 class="text-white main-title eurostile-extd text-uppercase text-center">
                             withdraw winnings
                         </h1>
                     </div>
@@ -238,34 +271,33 @@
             </div>
         </section>
 
-        <section id="player_stories" style="margin: 100px 0;">
+        <section id="player_stories" class="mt">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <p class="text-center fz-20 text-uppercase primary-color my-2">
                             player stories
                         </p>
-                        <h1 class="text-white main-title eurostile-black text-uppercase text-center">
+                        <h1 class="text-white main-title eurostile-extd text-uppercase text-center">
                             gamifly app                        
                         </h1>
                         <p class="text-white my-3 text-center">
-                            Play real money games on highly trusted money game app Cricket Fly. Check out reviews from real users below.
+                            Play amazing skill based games on our highly trusted app. Check out the reviews from our members.
                         </p>
                     </div>
                 </div>
                 <div class="row mt-4 rating-container">
                     <div class="col-4 d-flex justify-content-center align-items-center flex-column rating-text">
-                        <h4 class="text-white text-uppercase eurostile-bold mb-3">
+                        <h4 class="text-white text-uppercase eurostile-extd mb-3">
                             app rating
                         </h4>
-                        <h1 class="primary-color eurostile-bold mt-2">
+                        <h1 class="primary-color eurostile-extd mt-2">
                             4.6
                         </h1>
-                        <h4  class="text-white text-uppercase eurostile-bold">
-                            <span class="para-color text-uppercase eurostile-bold fs-3">
-                                out of
+                        <h4  class="text-white text-uppercase eurostile-extd">
+                            <span class="para-color text-uppercase eurostile-extd fs-3">
+                            out of 5
                             </span>
-                            5
                         </h4>
                     </div>
                     <div class="col-8">
@@ -303,124 +335,133 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-12 mx-auto">
-                        <p class="text-center primary-color my-5 text-uppercase">
+                        <p class="text-center primary-color fz-20 my-5 text-uppercase">
                             from our players
                         </p>
                     </div>
                     <div class="row mt-4 row-gap-4 mx-auto">
                         <div class="col-md-6 mx-auto">
-                            <div class="player_story_card"></div>
+                            <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="f4e9olXwW54"></div>
                         </div>
                         <div class="col-md-6 mx-auto">
-                            <div class="player_story_card"></div>
+                            <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="myAgPLs2vtM"></div>
                         </div>
                         <div class="col-md-6 mx-auto">
-                            <div class="player_story_card"></div>
+                            <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="QZftGj5nYCU"></div>
                         </div>
-                        <div class="col-md-6 mx-auto">
-                            <div class="player_story_card"></div>
-                        </div>
+                        <!-- <div class="col-md-6 mx-auto">
+                            <div id="player" 
+                                                class="plyr"
+                                                data-plyr-provider="youtube" data-plyr-embed-id="5T0neYrNRz8"></div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="winner_stories" style="margin: 100px 0;">
+        <section id="winner_stories" class="mt">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <p class="text-center text-uppercase primary-color fz-20 my-2">
                             winner stories
                         </p>
                     </div>
                 </div>
                 <div class="d-none d-md-block ">
-                    <div class="row mt-4 row-gap-4">
+                    <div class="row mt-4 row-gap-2">
                         <div class="col-md-4 mx-auto">
                             <div class="winner_card">
                                 <div class="winner_content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    My Name is Hassan Raza.
+                                    Before Cricket Fly game, I played many other cricket games but never get any benefits. But here I earn money ❤ by playing Tournaments 😍
                                 </div>
                                 <div class="d-flex mt-3 justify-content-between align-items-start">
                                    <div class="d-flex flex-column gap-1">
                                         <h4 class="text-white text-uppercase">
-                                            winner name
+                                            Hassan Raza
                                         </h4>
                                         <p class="primary-color">
-                                            Won 10,000
+                                            Won 10,000 GMF
                                         </p>
                                         <p class="para-color">
                                             Pakistan
                                         </p>
                                    </div>
-                                   <img src="assets/images/avatar-1.png" class="winner_avatar" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mx-auto">
-                            <div class="winner_card">
-                                <div class="winner_content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                </div>
-                                <div class="d-flex mt-3 justify-content-between align-items-start">
-                                   <div class="d-flex flex-column gap-1">
-                                        <h4 class="text-white text-uppercase">
-                                            winner name
-                                        </h4>
-                                        <p class="primary-color">
-                                            Won 10,000
-                                        </p>
-                                        <p class="para-color">
-                                            Pakistan
-                                        </p>
-                                   </div>
-                                   <img src="assets/images/avatar-2.png" class="winner_avatar" alt="">
+                                   <img src="assets/images/user-1.jpeg" class="winner_avatar" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 mx-auto">
                             <div class="winner_card">
                                 <div class="winner_content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    My name is Abdullah. Used to see ads about CricketFly game, and initially, I thought it was fake. However, I ended up downloading and playing the game.  Now I'm making around PKR 2500-4000 Daily.
                                 </div>
                                 <div class="d-flex mt-3 justify-content-between align-items-start">
                                    <div class="d-flex flex-column gap-1">
                                         <h4 class="text-white text-uppercase">
-                                            winner name
+                                            Abdullah
                                         </h4>
                                         <p class="primary-color">
-                                            Won 10,000
+                                            Won 18,000 GMF
                                         </p>
                                         <p class="para-color">
                                             Pakistan
                                         </p>
                                    </div>
-                                   <img src="assets/images/avatar-3.png" class="winner_avatar" alt="">
+                                   <img src="assets/images/user-2.jpeg" class="winner_avatar" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 ms-auto">
+                        <div class="col-md-4 mx-auto">
                             <div class="winner_card">
                                 <div class="winner_content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    My name is M.Husnain Islam.
+                                    First when I download it I didn't believed but with the passage of time this game changed my life. I just want to appreciate the developers.
                                 </div>
                                 <div class="d-flex mt-3 justify-content-between align-items-start">
                                    <div class="d-flex flex-column gap-1">
                                         <h4 class="text-white text-uppercase">
-                                            winner name
+                                            M.Husnain Islam
                                         </h4>
                                         <p class="primary-color">
-                                            Won 10,000
+                                            Won 13,000 GMF
                                         </p>
                                         <p class="para-color">
                                             Pakistan
                                         </p>
                                    </div>
-                                   <img src="assets/images/avatar-4.png" class="winner_avatar" alt="">
+                                   <img src="assets/images/user-3.jpeg" class="winner_avatar" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 me-auto">
+                        <div class="col-md-4 mx-auto">
+                            <div class="winner_card">
+                                <div class="winner_content">
+                                    My name is Mohammad Waqas, and I'm disable. I had been searching for an online earning platform for quite some time, but I couldn't find any real work. One day, I came across the Cricket Fly game. Now I earn PKR 3000 approx daily from the comfort of my home through this game.                                </div>
+                                <div class="d-flex mt-3 justify-content-between align-items-start">
+                                   <div class="d-flex flex-column gap-1">
+                                        <h4 class="text-white text-uppercase">
+                                            Mohammad Waqas
+                                        </h4>
+                                        <p class="primary-color">
+                                            Won 22,000
+                                        </p>
+                                        <p class="para-color">
+                                            Pakistan
+                                        </p>
+                                   </div>
+                                   <img src="assets/images/user-4.jpeg" class="winner_avatar" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 me-auto">
                             <div class="winner_card">
                                 <div class="winner_content">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -440,7 +481,7 @@
                                    <img src="assets/images/avatar-5.png" class="winner_avatar" alt="">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="d-block d-md-none">
@@ -450,88 +491,89 @@
                                 <li class="winner-active">
                                     <div class="winner_card">
                                         <div class="winner_content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            My Name is Hassan Raza.
+                                            Before Cricket Fly game, I played many other cricket games but never get any benefits. But here I earn money ❤ by playing Tournaments 😍
                                         </div>
                                         <div class="d-flex mt-3 justify-content-between align-items-start">
                                            <div class="d-flex flex-column gap-1">
                                                 <h4 class="text-white text-uppercase">
-                                                    winner name
+                                                    Hassan Raza
                                                 </h4>
                                                 <p class="primary-color">
-                                                    Won 10,000
+                                                    Won 10,000 GMF
                                                 </p>
                                                 <p class="para-color">
                                                     Pakistan
                                                 </p>
                                            </div>
-                                           <img src="assets/images/avatar-1.png" class="winner_avatar" alt="">
-                                        </div>
-                                    </div> 
-                                </li>
-                                <li class="">
-                                    <div class="winner_card">
-                                        <div class="winner_content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        </div>
-                                        <div class="d-flex mt-3 justify-content-between align-items-start">
-                                           <div class="d-flex flex-column gap-1">
-                                                <h4 class="text-white text-uppercase">
-                                                    winner name
-                                                </h4>
-                                                <p class="primary-color">
-                                                    Won 10,000
-                                                </p>
-                                                <p class="para-color">
-                                                    Pakistan
-                                                </p>
-                                           </div>
-                                           <img src="assets/images/avatar-2.png" class="winner_avatar" alt="">
+                                           <img src="assets/images/user-1.jpeg" class="winner_avatar" alt="">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="">
                                     <div class="winner_card">
                                         <div class="winner_content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            My name is Abdullah. Used to see ads about CricketFly game, and initially, I thought it was fake. However, I ended up downloading and playing the game.  Now I'm making around PKR 2500-4000 Daily.
                                         </div>
                                         <div class="d-flex mt-3 justify-content-between align-items-start">
                                            <div class="d-flex flex-column gap-1">
                                                 <h4 class="text-white text-uppercase">
-                                                    winner name
+                                                    Abdullah
                                                 </h4>
                                                 <p class="primary-color">
-                                                    Won 10,000
+                                                    Won 18,000 GMF
                                                 </p>
                                                 <p class="para-color">
                                                     Pakistan
                                                 </p>
                                            </div>
-                                           <img src="assets/images/avatar-3.png" class="winner_avatar" alt="">
+                                           <img src="assets/images/user-2.jpeg" class="winner_avatar" alt="">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="">
                                     <div class="winner_card">
                                         <div class="winner_content">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                            My name is M.Husnain Islam.
+                                            First when I download it I didn't believed but with the passage of time this game changed my life. I just want to appreciate the developers.
                                         </div>
                                         <div class="d-flex mt-3 justify-content-between align-items-start">
                                            <div class="d-flex flex-column gap-1">
                                                 <h4 class="text-white text-uppercase">
-                                                    winner name
+                                                    M.Husnain Islam
                                                 </h4>
                                                 <p class="primary-color">
-                                                    Won 10,000
+                                                    Won 13,000 GMF
                                                 </p>
                                                 <p class="para-color">
                                                     Pakistan
                                                 </p>
                                            </div>
-                                           <img src="assets/images/avatar-4.png" class="winner_avatar" alt="">
+                                           <img src="assets/images/user-3.jpeg" class="winner_avatar" alt="">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="">
+                                    <div class="winner_card">
+                                        <div class="winner_content">
+                                            My name is Mohammad Waqas, and I'm disable. I had been searching for an online earning platform for quite some time, but I couldn't find any real work. One day, I came across the Cricket Fly game. Now I earn PKR 3000 approx daily from the comfort of my home through this game.                                </div>
+                                        <div class="d-flex mt-3 justify-content-between align-items-start">
+                                           <div class="d-flex flex-column gap-1">
+                                                <h4 class="text-white text-uppercase">
+                                                    Mohammad Waqas
+                                                </h4>
+                                                <p class="primary-color">
+                                                    Won 22,000
+                                                </p>
+                                                <p class="para-color">
+                                                    Pakistan
+                                                </p>
+                                           </div>
+                                           <img src="assets/images/user-4.jpeg" class="winner_avatar" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- <li class="">
                                     <div class="winner_card">
                                         <div class="winner_content">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -551,7 +593,7 @@
                                            <img src="assets/images/avatar-5.png" class="winner_avatar" alt="">
                                         </div>
                                     </div> 
-                                </li>
+                                </li> -->
                             </ul>
                     </div>
                     <div class="winner_slide_arrows">
@@ -580,7 +622,7 @@
                             <div class="winner-dot"></div>
                             <div class="winner-dot"></div>
                             <div class="winner-dot"></div>
-                            <div class="winner-dot"></div>
+                            <!-- <div class="winner-dot"></div> -->
                         </div>
                         <button class="winner-next" id="winner_arrow_next">
                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -608,14 +650,14 @@
             </div>
         </section>
 
-        <section id="installation" style="margin: 100px 0;">
+        <section id="installation" class="mt downloadable">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <p class="text-center fz-20 text-uppercase primary-color my-2">
                            How to play
                         </p>
-                        <h1 class="text-white main-title eurostile-black text-uppercase text-center">
+                        <h1 class="text-white main-title eurostile-extd text-uppercase text-center">
                             install app                       
                         </h1>
                     </div>
@@ -657,8 +699,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-none" id="secure-section">
+                    <div class="row mt-5">
+                        <div class="col-12 mx-auto text-center mt-4">
+                            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle opacity="0.05" cx="22.5" cy="22.5" r="22.5" fill="#C5FF69"/>
+                                <circle opacity="0.1" cx="22.5" cy="22.5" r="17.6205" fill="#C5FF69"/>
+                                <path d="M29.1201 14.188L22.2289 11.9277L15.3377 14.188C14.8185 14.3583 14.3668 14.6862 14.0466 15.1251C13.7264 15.564 13.5541 16.0915 13.5542 16.6328V22.2212C13.5542 28.6801 21.5349 32.2469 21.8767 32.3954L22.1838 32.5301L22.503 32.4254C22.8466 32.3121 30.9036 29.584 30.9036 22.2212V16.6328C30.9037 16.0915 30.7314 15.564 30.4112 15.1251C30.0911 14.6862 29.6393 14.3583 29.1201 14.188ZM22.6141 23.9286C22.4624 24.0797 22.282 24.1995 22.0832 24.281C21.8844 24.3625 21.6712 24.4041 21.456 24.4034H21.4274C21.2078 24.4 20.9912 24.3527 20.7907 24.2641C20.5901 24.1756 20.4098 24.0477 20.2606 23.8883L18.2602 21.8281L19.512 20.6417L21.4586 22.6504L25.953 18.2029L27.1796 19.4167L22.6141 23.9286Z" fill="#C5FF69"/>
+                                </svg>
+                            <h3 class="mt-2 text-center text-uppercase eurostile-extd primary-color">
+                                100% . Secure
+                            </h3>                                
+                        </div>
+                    </div>
+                </div>
                 <div class="d-block d-md-none">
-                    <div class="w-100 mt-5">
+                    <div class="w-100 mt-3">
                         <div class="guide_slider mx-auto w-100">
                             <ul class="mx-auto w-100 ps-0">
                                 <li class="guide-active">
@@ -697,25 +753,8 @@
                             </ul>
                     </div>
                     <div class="guide_slide_arrows">
-                        <button class="guide-prev" id="guide_arrow_prev" style="transform: rotate(180deg);">
-                            <svg width="34" height="34"  viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="32.1622" height="32.1622" transform="matrix(-1 0 0 1 33.0811 0.918945)" fill="url(#pattern0)"/>
-                                <mask id="mask0_418_26" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34">
-                                <rect width="32.1622" height="32.1622" transform="matrix(-1 0 0 1 33.0811 0.918945)" fill="url(#pattern1)"/>
-                                </mask>
-                                <g mask="url(#mask0_418_26)">
-                                <rect width="32.1622" height="32.1622" transform="matrix(-1 0 0 1 33.0811 0.918945)" fill="white"/>
-                                </g>
-                                <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_418_26" transform="scale(0.00195312)"/>
-                                </pattern>
-                                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_418_26" transform="scale(0.00195312)"/>
-                                </pattern>
-                                <image id="image0_418_26" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAhKklEQVR4Ae3dC8xk5VkA4B/YLdBSFrZcJJSyXiKXtdpqvaQ0RC3aVBK1tU1bSaumSYOJNb1IazUmjdGYoqitkmhMTKwmElPtBRTayM3aGmtTDKAtBUFZru2WcmdZWPB9YYfO/rc5M3O+s9855znJy///M9985/ue8y3vO2dmzqys2AgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBOoVOKTeoRlZAYETos/viNge8YKI50c8GfFgxEMRd0bcFpG32QgQIEBgwAIKgOEe3GNiaj8a8aqIV0a8NOKoiFnb3mhwa8QXI67ZH/8TP20ECBAgQIBApQL5rP6tEZdG7Il4uqW4Mfr5QMSpETYCBAgQIECgEoETYxwfjNgd0VbSX6+fp6L/LC7yjIKNAAECBAgQOEgC22K/F0Y8HrFewi5521Wxz5dF2AgQIECAAIEOBX4p9nVvRMkkP6vvfLPgxRHHRtgIECBAgACBggLHRd+fiJiVnLu8f1eM5+yCc9Y1AQIECBAYtUC+o/+uiC6Te9N95dmA34o4NMJGgAABAgQItCTw+ujn0YimCflgtftYjPHwluasGwIECBAgMGqBd8Xs90UcrKQ+734/HWNtcs2BUR9UkydAgAABApsJvCfunDcB19D+mhj3EZtNzH0ECBAgQIDA+gJ9Tf6TAiTfrHjY+lNzKwECBAgQILCewAVx4ySR9vnnRetNzm0ECBAgQIDAWoG+P/OfLljy6oE/u3aKbiFAgAABAgSmBYbyzH+6CMhLFJ8yPUm/EyBAgAABAt8SGNIz/+kCIH//5Lem6TcCBAgQIEBgIjDk5D8pBs6dTNZPAgQIECBAYGVliKf9J0l/+ufNcbC3OuAECBAgQIDAysoYnvlPFwG/4KATIECAAIGxC4wt+Wch8OUI3xcw9pVv/gQIEBixwFhO+08/+5/87r0AI174pk6AAIExC4zx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PwECBAgQWC0w9DMBu2LCXvtffdT9TYAAAQIEQmDIZwLe5AgTIECAAAECGwsM8UzA3208XfcQIECAAAECE4EhFQG3xKS2TSbmJwECBAgQILC5wBBeDng4pvj9m0/TvQQIECBAgMBqgT6fCcjr/b929YT8TYAAAQIECDQTyCLgqYj8Ct2+xL4Y69sibAQIECBAgMASAplMn4joQwHweIzzLUvM1UMJECBAgACBKYE3xu+PRNRcBDwQ43v11Jj9SoAAAQIECLQgcEb08V8RNRYBN8a4drYwR10QIECAAAEC6wgcHbd9NKKWIiDfn/AnEUdE2AgQIECAAIHCAmdH/wf7bMB1MYazCs9T9wQIECBAgMAqgcPj73dG5HX2uzwjcFvs7x0Rh0XYCBAgQIAAgYMkkIXA+RHXR5QsBL4U/Z8XsSXCRoAAAQIECFQk8PIYyx9F3BzRRjFwU/TzOxHe4BcINgIECAxB4JAhTMIcNhU4Ne7Nj+W9IuK0iPwUwUkR62158Z58KSGv3Z9J/3MR10bcFWEjQIAAgQEJKAAGdDDnmMqh0Ta/nOfYiHwNPy/Z+2BEXmMgf7cRIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECtQj8P2C9G8YxJQhVAAAAAElFTkSuQmCC"/>
-                                </defs>
-                            </svg>   
+                        <button class="guide-prev" id="guide_arrow_prev" >
+                            <img src="assets/images/left-arrow.png" class="guide-prev object-fit-contain" width="32px" height="32px" alt="">
                         </button>
                         <div class="guide-dots">
                             <div class="guide-dot active"></div>
@@ -723,43 +762,26 @@
                             <div class="guide-dot"></div>
                         </div>
                         <button class="guide-next" id="guide_arrow_next">
-                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="32.1622" height="32.1622" transform="matrix(-1 0 0 1 33.0811 0.918945)" fill="url(#pattern0)"/>
-                                <mask id="mask0_418_26" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="34">
-                                <rect width="32.1622" height="32.1622" transform="matrix(-1 0 0 1 33.0811 0.918945)" fill="url(#pattern1)"/>
-                                </mask>
-                                <g mask="url(#mask0_418_26)">
-                                <rect width="32.1622" height="32.1622" transform="matrix(-1 0 0 1 33.0811 0.918945)" fill="white"/>
-                                </g>
-                                <defs>
-                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_418_26" transform="scale(0.00195312)"/>
-                                </pattern>
-                                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_418_26" transform="scale(0.00195312)"/>
-                                </pattern>
-                                <image id="image0_418_26" width="512" height="512" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAACAKADAAQAAAABAAACAAAAAAAL+LWFAAAhKklEQVR4Ae3dC8xk5VkA4B/YLdBSFrZcJJSyXiKXtdpqvaQ0RC3aVBK1tU1bSaumSYOJNb1IazUmjdGYoqitkmhMTKwmElPtBRTayM3aGmtTDKAtBUFZru2WcmdZWPB9YYfO/rc5M3O+s9855znJy///M9985/ue8y3vO2dmzqys2AgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBOoVOKTeoRlZAYETos/viNge8YKI50c8GfFgxEMRd0bcFpG32QgQIEBgwAIKgOEe3GNiaj8a8aqIV0a8NOKoiFnb3mhwa8QXI67ZH/8TP20ECBAgQIBApQL5rP6tEZdG7Il4uqW4Mfr5QMSpETYCBAgQIECgEoETYxwfjNgd0VbSX6+fp6L/LC7yjIKNAAECBAgQOEgC22K/F0Y8HrFewi5521Wxz5dF2AgQIECAAIEOBX4p9nVvRMkkP6vvfLPgxRHHRtgIECBAgACBggLHRd+fiJiVnLu8f1eM5+yCc9Y1AQIECBAYtUC+o/+uiC6Te9N95dmA34o4NMJGgAABAgQItCTw+ujn0YimCflgtftYjPHwluasGwIECBAgMGqBd8Xs90UcrKQ+734/HWNtcs2BUR9UkydAgAABApsJvCfunDcB19D+mhj3EZtNzH0ECBAgQIDA+gJ9Tf6TAiTfrHjY+lNzKwECBAgQILCewAVx4ySR9vnnRetNzm0ECBAgQIDAWoG+P/OfLljy6oE/u3aKbiFAgAABAgSmBYbyzH+6CMhLFJ8yPUm/EyBAgAABAt8SGNIz/+kCIH//5Lem6TcCBAgQIEBgIjDk5D8pBs6dTNZPAgQIECBAYGVliKf9J0l/+ufNcbC3OuAECBAgQIDAysoYnvlPFwG/4KATIECAAIGxC4wt+Wch8OUI3xcw9pVv/gQIEBixwFhO+08/+5/87r0AI174pk6AAIExC4zx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PwECBAgQWC0w9DMBu2LCXvtffdT9TYAAAQIEQmDIZwLe5AgTIECAAAECGwsM8UzA3208XfcQIECAAAECE4EhFQG3xKS2TSbmJwECBAgQILC5wBBeDng4pvj9m0/TvQQIECBAgMBqgT6fCcjr/b929YT8TYAAAQIECDQTyCLgqYj8Ct2+xL4Y69sibAQIECBAgMASAplMn4joQwHweIzzLUvM1UMJECBAgACBKYE3xu+PRNRcBDwQ43v11Jj9SoAAAQIECLQgcEb08V8RNRYBN8a4drYwR10QIECAAAEC6wgcHbd9NKKWIiDfn/AnEUdE2AgQIECAAIHCAmdH/wf7bMB1MYazCs9T9wQIECBAgMAqgcPj73dG5HX2uzwjcFvs7x0Rh0XYCBAgQIAAgYMkkIXA+RHXR5QsBL4U/Z8XsSXCRoAAAQIECFQk8PIYyx9F3BzRRjFwU/TzOxHe4BcINgIECAxB4JAhTMIcNhU4Ne7Nj+W9IuK0iPwUwUkR62158Z58KSGv3Z9J/3MR10bcFWEjQIAAgQEJKAAGdDDnmMqh0Ta/nOfYiHwNPy/Z+2BEXmMgf7cRIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECtQj8P2C9G8YxJQhVAAAAAElFTkSuQmCC"/>
-                                </defs>
-                            </svg>                                            
+                            <img src="assets/images/right-arrow.png" class="guide-next object-fit-contain" width="32px" height="32px" alt="">                                          
                         </button>
                     </div>
                     </div>
                 </div>
                 <div class="text-center my-5">
                     <a href="https://storage.googleapis.com/gamifly-game-builds/Gamifly.apk" target="_blank" class="download-link-now ">
-                        Get Download Link Now
+                        Download App
                     </a>
                 </div>
             </div>
         </section>
 
-        <section id="game" style="margin: 100px 0;">
+        <section id="game" class="mt">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <!-- <p class="text-center text-uppercase primary-color my-2">
                             game
-                        </p>
+                        </p> -->
                         <h1 class="text-white main-title eurostile-black text-uppercase text-center">
                             skill based games
                         </h1>
@@ -887,11 +909,11 @@
             </div>
         </section>
 
-        <section id="features" style="margin: 100px 0;">
+        <section id="features" class="mt">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <p class="text-center fz-20 text-uppercase primary-color my-2">
                             why gamifly
                         </p>
                         <h1 class="text-white main-title eurostile-black text-uppercase text-center">
@@ -902,7 +924,7 @@
                 <div class="row mt-5 row-gap-4">
                     <div class="col-12 col-md-7 ms-auto">
                         <div class="feature-card">
-                            <h4 class="primary-color eurostile-bold">
+                            <h4 class="primary-color eurostile-extd">
                                 Multiple Games
                             </h4>
                             <p class="para-color">
@@ -928,7 +950,7 @@
                                 24/7 Support
                             </h4>
                             <p class="para-color">
-                                What’sapp support in your preferred language.  
+                                Whatsapp support in your preferred language.  
                             </p>
                             <img src="assets/images/feature-3.png" class="feature-img" alt="">
                         </div>
@@ -949,11 +971,11 @@
             </div>
         </section>
 
-        <section id="faq" style="margin: 100px 0;">
+        <section id="faq" class="mt">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center text-uppercase primary-color my-2">
+                        <p class="text-center fz-20 text-uppercase primary-color my-2">
                             more questions?
                         </p>
                         <h1 class="text-white main-title eurostile-black text-uppercase text-center">
@@ -966,52 +988,64 @@
                         <div class="accordion" id="faq">
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  What is question ?
+                                <button class="accordion-button fz-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Is it FREE to join Cricket Fly?
                                 </button>
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Yes, Cricket Fly  App is completely free to join, and you'll receive a sign-up bonus upon successful registration.
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  What is question ?
+                                <button class="accordion-button fz-25 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How to create an account on Cricket Fly App? 
                                 </button>
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    To create an account, download the app, select your country, wallet, provide your details, including phone number, CNIC/KTP, Name, Email, and PIN. <a href="https://youtube.com/shorts/3mUctQ2pFUY?feature=share">How to create an app?</a>
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  What is question ?
+                                <button class="accordion-button fz-25 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How to play and earn on Cricket Fly App?
                                 </button>
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq">
                                 <div class="accordion-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    We have 2 games. In Cricket Fly, you need to score as many runs as possible in 6 balls to win. In Motor Fly, you need to complete the race as quickly as possible to win. The higher you are on the leaderboard, the bigger the rewards!
                                 </div>
                               </div>
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    What is question ?
+                                  <button class="accordion-button fz-25 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Is it Real? 
                                   </button>
                                 </h2>
                                 <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq">
                                   <div class="accordion-body">
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    Cricket Fly is 100% secure, with over 2 million downloads. Shadab Khan is the Brand Ambassador of Cricket Fly and we are also the official partner of Islamabad United. 
                                   </div>
                                 </div>
-                              </div>
+                            </div>
+                            <div class="accordion-item z-0">
+                                <h2 class="accordion-header" id="headingFive">
+                                  <button class="accordion-button fz-25 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How much can I earn daily by playing on Cricket Fly? 
+                                  </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq">
+                                  <div class="accordion-body">
+                                    Your earnings on Cricket Fly are limitless. Winners typically make $30-$50 daily on the app. 
+                                  </div>
+                                </div>
+                            </div>
                           </div>
                     </div>
                 </div>
@@ -1064,9 +1098,6 @@
                                     </a>
                                 </li>
                             </ul>
-                            <p class=" text-secondary">
-                                ©2022 Gamifly, Inc. All Rights Reserved.
-                            </p>
                         </div>
                         <div class="col-md-3">
                             <h3 class="h4 text-white text-uppercase">
@@ -1081,13 +1112,13 @@
                                 About us
                             </h3>
                             <ul class="list-unstyled">
-                                <li class="my-2">
+                                <!-- <li class="my-2">
                                     <a href="https://gamifly.gitbook.io/gamifly/" class=" text-decoration-none text-secondary" target="_blank">Our Team</a>
                                 </li>
                             
                                 <li class="my-2">
                                     <a href="" target="_blank" class="text-decoration-none text-secondary">Our Company</a>
-                                </li>
+                                </li> -->
                                 <li class="my-2">
                                     <a href="private-policy.html" target="_blank" class=" text-decoration-none text-secondary">Privacy Policy</a>
                                 </li>
@@ -1099,11 +1130,19 @@
                             </h3>
                             <ul class="list-unstyled">
                                 <li class="my-2">
-                                    <a href="" class="text-decoration-none text-secondary">Address</a>
+                                    <a href="https://wa.me/message/SWXHTYJFF2KVI1" target="_blank" class="text-decoration-none text-secondary d-flex justify-content-start align-items-center">
+                                        <i class="fab fa-whatsapp fs-3 "></i>
+                                        <p class="mt-3 ms-2">Whatsapp</p>
+                                    </a>
                                 </li>
                             </ul>
                         </div>                
                     </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <p class=" text-secondary">
+                        ©2022 Gamifly, Inc. All Rights Reserved.
+                    </p>
                 </div>
             </div>
         </div>
