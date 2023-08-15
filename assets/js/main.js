@@ -3,13 +3,9 @@ window.addEventListener("scroll",() => {
 
     if(window.scrollY > 80){
         document.querySelector("header").classList.add("header")
-        document.querySelector("#download").classList.add("d-block")
-        document.querySelector("#download").classList.remove("d-none")
     }
     else{
         document.querySelector("header").classList.remove("header")
-        document.querySelector("#download").classList.remove("d-block")
-        document.querySelector("#download").classList.add("d-none")
     }
 })
 

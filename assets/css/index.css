@@ -123,8 +123,21 @@
 
 @media screen and (max-width: 798px) {
 
+    .feature-title{
+        font-size: 15px;
+    }
+
+    .feature-para{
+        font-size: 12px;
+    }
+
     #background{
         background-image: url('../images/mobile-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        width: 100%;
     }
 
     .star-rating{
