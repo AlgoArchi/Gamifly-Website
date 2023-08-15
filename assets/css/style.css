@@ -84,7 +84,15 @@ footer{
     background-color: #000;
 }
 
+.down-fs{
+    font-size: 1.2rem;
+}
+
 @media screen and (max-width: 768px){
+
+    .down-fs{
+        font-size: .8rem;
+    }
 
     .mt{
         margin: 30px 0;

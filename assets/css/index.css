@@ -109,8 +109,17 @@
     object-fit: contain;
 }
 
+.google-play{
+    width: 163px;
+    height: 32px;
+}
+
 @media screen and (max-width: 798px) {
 
+    .google-play{
+        width: 103px;
+        height: 25px;
+    }
     .help-card{
         width: 102px;
         height: 102px;
