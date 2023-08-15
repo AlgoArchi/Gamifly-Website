@@ -84,7 +84,7 @@ function prevGameSlide(){
     }
 }
 
-// setInterval(nextGameSlide,3000);
+setInterval(nextGameSlide,1000);
 
 
 function nextGameSlide(){

@@ -27,6 +27,7 @@
     background-attachment: fixed;
     background-size: cover;
     padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 #banner{
@@ -42,7 +43,7 @@
 
 #banner .banner-container{
     width: 100%;
-    min-height: 90vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +63,7 @@
 .banner-content h1 span{
     font-weight: bolder;
     font-size: 40px;
-    color: #9BFD00;
+    color: #C5FF69;
 }
 
 
@@ -71,6 +72,7 @@
     background: linear-gradient(151deg, #A981FF 0%, #D987FF 100%);
     text-transform: uppercase;
     color: #fff;
+    font-weight: bolder !important;
     text-decoration: none;
     padding: 20px;
     transition: .4s;
@@ -121,6 +123,10 @@
 
 @media screen and (max-width: 798px) {
 
+    #background{
+        background-image: url('../images/mobile-bg.png');
+    }
+
     .star-rating{
         width: 13px;
         height:12px;
@@ -156,11 +162,11 @@
     }
     .banner-content h1{
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .banner-content h1 span{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .video-frame{
@@ -261,7 +267,7 @@
 }
 
 .guide-card h3{
-    color: #9BFD00;
+    color: #C5FF69;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -312,6 +318,7 @@
 .accordion-button::after{
     background-color: #000 !important;
     color: #fff !important;
+    padding: 15px;
 }
 
 .accordion-body{
@@ -523,7 +530,7 @@ li.winner-active{
     width: 37px;
     height: 37px;
     border: 5px solid #FFF;
-    border-bottom-color: #9BFD00;
+    border-bottom-color: #C5FF69;
     border-radius: 50%;
     display: inline-block;
     box-sizing: border-box;

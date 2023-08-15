@@ -41,12 +41,16 @@ body{
 }
 
 :root {
-    --plyr-color-main: #9BFD00;
+    --plyr-color-main: #C5FF69;
     --plyr-captions-text-color: transparent;
   }
   
 .mt{
     margin: 100px 0;
+}
+
+.sofia-pro{
+    font-family: 'Sofia_Pro_Bold' , sans-serif;
 }
 .eurostile-bold{
     font-family: 'Eurostile_Bold', sans-serif !important;
@@ -95,7 +99,7 @@ footer{
     }
 
     .mt{
-        margin: 30px 0;
+        margin: 60px 0;
     }
 
     footer{
@@ -139,18 +143,18 @@ footer .social li a:hover {
 }
 
 .logo{
-    width: 150px;
-    height: 50px;
+    width: 100px;
+    height: 40px;
     object-fit: contain;
     object-position: center;
 }
 
 .para-color{
-    color:    rgba(255, 255, 255, 0.50)
+    color:   #8b8b8b;
 }
 
 .primary-color{
-    color: #9BFD00;
+    color: #C5FF69;
 }
 
 .ytp-title{
