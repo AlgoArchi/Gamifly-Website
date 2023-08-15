@@ -138,6 +138,11 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         width: 100%;
+        -o-background-size:cover; 
+        -moz-background-size:cover; 
+        -webkit-background-size:cover; 
+        background-size:100% 100%; 
+        background-repeat:no-repeat;
     }
 
     .star-rating{
