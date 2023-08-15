@@ -114,8 +114,17 @@
     height: 32px;
 }
 
+.star-rating{
+    width: 18px;
+    height:17px;
+}
+
 @media screen and (max-width: 798px) {
 
+    .star-rating{
+        width: 13px;
+        height:12px;
+    }
     .google-play{
         width: 103px;
         height: 25px;
