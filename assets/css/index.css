@@ -132,16 +132,13 @@
     }
 
     #background{
-        background-image: url('../images/mobile-bg.png');
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
         width: 100%;
-        -o-background-size:cover; 
-        -moz-background-size:cover; 
-        -webkit-background-size:cover; 
-        background-repeat:no-repeat;
+        background-image: url('../images/mobile-bg.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
     }
 
     .star-rating{
