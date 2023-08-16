@@ -20,16 +20,6 @@
     }
 }
 
-#background{
-    background-image: url('../images/bg.png');
-    width: 100% !important;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 60px;
-}
-
 #banner{
     width: 100%;
     display: flex;
@@ -119,6 +109,18 @@
     height:17px;
 }
 
+@media screen and (min-width: 798px) {
+    #background{
+        background-image: url('../images/bg.png');
+        width: 100% !important;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+}
+
 @media screen and (max-width: 798px) {
 
     .feature-title{
@@ -141,14 +143,8 @@
 
     #background{
         width: 100%;
-        background-image: url('../images/mobile-bg.png');
-        background-repeat:no-repeat;
-        background-position: center;
-        background-size: cover;
-       -ms-background-size: cover;
-       -o-background-size: cover;
-       -moz-background-size: cover;
-       -webkit-background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 60px;
     }
 
     .star-rating{
