@@ -74,12 +74,10 @@
     color: #fff;
     font-weight: bolder !important;
     text-decoration: none;
+    animation: download-animate .4s alternate infinite;
     padding: 20px;
+    font-size: 17px;
     transition: .4s;
-}
-
-.download-link-now:hover{
-    background: linear-gradient(151deg,#D987FF 0%, #A981FF  100%);
 }
 
 .plyr {
@@ -129,6 +127,16 @@
 
     .feature-para{
         font-size: 12px;
+    }
+
+    .mobile-bg{
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
     }
 
     #background{
@@ -197,9 +205,6 @@
     }
 
 }
-
-
-
 
 .splide__arrow{
     font-size: 25px;

@@ -52,6 +52,11 @@ body{
 .sofia-pro{
     font-family: 'Sofia_Pro_Bold' , sans-serif;
 }
+
+.sofia-pro-black{
+    font-family: 'Sofia_Pro_Black' , sans-serif;
+}
+
 .eurostile-bold{
     font-family: 'Eurostile_Bold', sans-serif !important;
 }
