@@ -5,18 +5,22 @@
     align-items: center;
     border-radius: 30px;
     width: 215px;
+    font-weight: bold;
+    font-family: 'Sofia_Pro_Black' , sans-serif;
     height: 47px;
+    text-transform: uppercase;
+    color: #000 !important;
     animation: download-animate .4s alternate infinite;
 }
 
+
 @keyframes download-animate{
     0%{
-        background: linear-gradient(151deg, #A981FF 0%, #D987FF 100%);
+        background: linear-gradient(151deg, rgba(197, 255, 105, 1) 0%, rgba(156, 255, 0, 1) 100%);
 
     }
     100%{
-        background: linear-gradient(151deg,#D987FF 0%, #A981FF  100%);
-
+        background: linear-gradient(151deg,  rgba(156, 255, 0, 1) 0%, rgba(197, 255, 105, 1) 100%);
     }
 }
 
@@ -24,11 +28,9 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
     align-items: center;
     justify-content: center;
-    margin: 0 !important;
-    
+    margin: 15px 0 0 0 !important;
 }
 
 #banner .banner-container{
@@ -38,7 +40,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 30px;
+    row-gap: 10px;
 }
 
 .banner-content{
@@ -56,16 +58,27 @@
     color: #C5FF69;
 }
 
+.get-sign-up{
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 0px 20px #B47AFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 
 .download-link-now{
     border-radius: 12px;
-    background: linear-gradient(151deg, #A981FF 0%, #D987FF 100%);
+    background: linear-gradient(151deg, rgba(197, 255, 105, 1) 0%, rgba(156, 255, 0, 1) 100%);
     text-transform: uppercase;
-    color: #fff;
+    color: #000 !important;
     font-weight: bolder !important;
+    font-family: 'Sofia_Pro_Black' , sans-serif;
     text-decoration: none;
     animation: download-animate .4s alternate infinite;
-    padding: 20px;
+    padding: 20px 40px;
     font-size: 17px;
     transition: .4s;
 }
@@ -74,10 +87,14 @@
     width: 100%;
     height: 350px;
 }
+
 .plyr__video-wrapper{
     padding: 0px !important;
 }
 
+.plyr__control.plyr__control--overlaid{
+    display: none !important;
+}
 
 .help-card{
     width: 152px;
@@ -207,6 +224,25 @@
     background-color: transparent;
 }
 
+.splide__arrows{
+    position: absolute;
+    bottom:  50%;
+    left: 0 !important;
+    width: 100%;
+}
+
+.splide__arrow--next {
+    right: 5rem !important;
+    background-color: #000;
+    opacity: .5;
+}
+
+.splide__arrow--prev {
+    left: 5rem !important;
+    background-color: #000;
+    opacity: .5;
+}
+
 
 .game-card{
     width: 100%;
@@ -247,6 +283,7 @@
 
 
 .winner_card{
+    margin: 20px;
     padding: 10px;
     border-radius: 21px;
     border: 3px solid #1C1C1C;
@@ -335,11 +372,11 @@
 .accordion-button::after{
     background-color: #000 !important;
     color: #fff !important;
-    padding: 15px;
 }
 
 .accordion-body{
     padding: 25px !important;
+    font-size: 14px;
 }
 
 .accordion-button.collapsed::after {
@@ -367,6 +404,10 @@ background-image: initial;
 background-image: initial;
 }
 
+.faq-question-fz{
+    font-size: 24px;
+}
+
 .splide__slide, .splide__slide.is_active{
     border-radius: 30px;
     overflow: hidden;
@@ -383,29 +424,39 @@ background-image: initial;
 }
 
 
-.rating-container{
-    border-radius: 39px;
-    border: 3px solid #1C1C1C;
-    background: #000;
-    padding: 4em;
-}
-
-.rating-text h4{
-    font-size: 32px;
-    line-height: .6;
-}
-.rating-text h1{
-    font-size: 120px;
-    line-height: .9;
-}
-
 .payment-img{
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 60px;
     object-fit: contain;
 }
 
+.download-text{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-backdrop-filter: blur(50px) !important;
+    -moz-backdrop-filter: blur(50px) !important;
+    backdrop-filter: blur(50px) !important;
+}
+.download-text p{
+    color: var(--white, #FFF);
+    text-align: center;
+    text-shadow: 0px 0px 10px #D3B0FF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 798px) {
+
+
+    .faq-question-fz{
+        font-size: 16px;
+    }
 
     .feature-img{
         height: auto;
@@ -442,10 +493,12 @@ background-image: initial;
 
     .splide__arrow--next {
         right: 0rem !important;
+        background-color: transparent !important;
     }
 
     .splide__arrow--prev {
         left: 0rem !important;
+        background-color: transparent !important;
     }
 
 

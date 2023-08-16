@@ -215,11 +215,8 @@ function downloadProgress(){
     },7000)
 }
 
-console.log(Array.from(document.querySelectorAll(".downloadable")))
-
 Array.from(document.querySelectorAll(".downloadable")).map(download => {
     download.addEventListener('click', e => {
-        console.log(e.target)
         if(!e.target.classList.contains('guide-next', 'guide-prev')){
             const link = document.querySelector('.download-app')
             link.click()    

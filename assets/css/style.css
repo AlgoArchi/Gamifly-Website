@@ -46,7 +46,7 @@ body{
   }
   
 .mt{
-    margin: 100px 0;
+    margin: 120px 0;
 }
 
 .sofia-pro{
@@ -73,8 +73,9 @@ body{
     font-size: 20px !important;
 }
 
-.fz-25{
-    font-size: 25px !important;
+
+.subtitle-fz{
+    font-size: 36px;
 }
 
 .header{
@@ -103,8 +104,12 @@ footer{
         font-size: .8rem;
     }
 
+    .subtitle-fz{
+        font-size: 20px;
+    }
+
     .mt{
-        margin: 60px 0;
+        margin: 60px  0;
     }
 
     footer{
@@ -114,10 +119,7 @@ footer{
     .fz-20{
         font-size: 17px !important;
     }
-    
-    .fz-25{
-        font-size: 22px !important;
-    }
+
 }
 
 footer .social{
