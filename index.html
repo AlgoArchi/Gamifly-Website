@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/index.css">
 </head>
@@ -103,18 +102,28 @@
                                 <div class="splide__track">
                                         <ul class="splide__list">
                                             <li class="splide__slide">
-                                                <div id="player" 
-                                                class="plyr"
-                                                data-plyr-provider="youtube" data-plyr-embed-id="MQfEI7a39Mo"></div>
-                                            <li class="splide__slide">
-                                                <div id="player" 
-                                                class="plyr"
-                                                data-plyr-provider="youtube" data-plyr-embed-id="rrRBF7LVA_Q"></div>
+                                                <div class="video">
+                                                    <div class="video__youtube" data-youtube>
+                                                        <img src="/assets/images/shadab-poster-1.png" class="video__placeholder" />
+                                                        <button class="video__button" data-youtube-button="https://www.youtube.com/embed/MQfEI7a39Mo"></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                             <li class="splide__slide">
-                                                <div id="player" 
-                                                class="plyr"
-                                                data-plyr-provider="youtube" data-plyr-embed-id="MQfEI7a39Mo"></div>
+                                                <div class="video">
+                                                    <div class="video__youtube" data-youtube>
+                                                        <img src="/assets/images/shadab-poster-2.png" class="video__placeholder" />
+                                                        <button class="video__button" data-youtube-button="https://www.youtube.com/embed/rrRBF7LVA_Q"></button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="splide__slide">
+                                                <div class="video">
+                                                    <div class="video__youtube" data-youtube>
+                                                        <img src="/assets/images/shadab-poster-1.png" class="video__placeholder" />
+                                                        <button class="video__button" data-youtube-button="https://www.youtube.com/embed/MQfEI7a39Mo"></button>
+                                                    </div>
+                                                </div>
                                             </li>
                                         </ul>
                                 </div>
@@ -281,19 +290,19 @@
                     </div>
                     <div class="row mt-4 row-gap-4 mx-auto">
                         <div class="col-md-6 mx-auto">
-                            <div id="player" 
-                                                class="plyr"
-                                                data-plyr-provider="youtube" data-plyr-embed-id="f4e9olXwW54"></div>
+                            <!-- <div id="player" 
+                                class="plyr"
+                                data-plyr-provider="youtube" data-plyr-embed-id="f4e9olXwW54"></div> -->
                         </div>
                         <div class="col-md-6 mx-auto">
-                            <div id="player" 
-                                                class="plyr"
-                                                data-plyr-provider="youtube" data-plyr-embed-id="myAgPLs2vtM"></div>
+                            <!-- <div id="player" 
+                                class="plyr"
+                                data-plyr-provider="youtube" data-plyr-embed-id="myAgPLs2vtM"></div> -->
                         </div>
                         <div class="col-md-6 mx-auto">
-                            <div id="player" 
-                                                class="plyr"
-                                                data-plyr-provider="youtube" data-plyr-embed-id="QZftGj5nYCU"></div>
+                            <!-- <div id="player" 
+                                    class="plyr"
+                                    data-plyr-provider="youtube" data-plyr-embed-id="QZftGj5nYCU"></div> -->
                         </div>
                         <!-- <div class="col-md-6 mx-auto">
                             <div id="player" 
@@ -401,27 +410,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-4 me-auto">
-                            <div class="winner_card">
-                                <div class="winner_content">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                </div>
-                                <div class="d-flex mt-3 justify-content-between align-items-start">
-                                   <div class="d-flex flex-column gap-1">
-                                        <h5 class="text-white text-uppercase">
-                                            winner name
-                                        </h5>
-                                        <p class="primary-color">
-                                            Won 10,000
-                                        </p>
-                                        <p class="para-color">
-                                            Pakistan
-                                        </p>
-                                   </div>
-                                   <img src="assets/images/avatar-5.png" class="winner_avatar" alt="">
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="d-block d-md-none">
@@ -1096,7 +1084,6 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
