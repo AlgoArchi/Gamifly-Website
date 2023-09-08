@@ -128,7 +128,7 @@
 
 @media screen and (min-width: 798px) {
     #background{
-        background-image: url('../images/bg.png');
+        background-image: url('../images/bg.webp');
         width: 100% !important;
         background-position: center;
         background-attachment: fixed;
@@ -417,10 +417,14 @@ background-image: initial;
     display: none;
 }
 
-
 .splide__slide video{
     width: 100%;
     height: 400px;
+}
+
+.splide__slide img{
+    width: 100%;
+    object-fit: cover
 }
 
 
@@ -472,6 +476,12 @@ background-image: initial;
         width: 100%;
         height: 200px;
     }
+
+    .splide__slide img{
+        width: 100%;
+        height: 200px;
+    }
+
     .splide__pagination{
         display: flex;
     }
@@ -581,15 +591,6 @@ li.winner-active{
     border-radius: 30px;
 }
 
-/* .splide__slide{
-    transform: scale(.9, .9); 
-    display: inline-flex;  
-    vertical-align: middle; 
-    transition: .4s;
-  }
-  .splide__slide.is-active{
-    transform: scale(1, 1); 
-  } */
 
   .splide__track{
     justify-content: center;
@@ -617,19 +618,19 @@ li.winner-active{
     } 
 
 
-    .video {
+   #banner .video {
         position: relative;
         width: 50vw;
     }
 
     @media screen and (max-width: 768px){
-        .video {
+        #banner .video {
             position: relative;
             width: 100vw;
         } 
     }
     
-    .video__iframe {
+    #banner   .video__iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -637,25 +638,25 @@ li.winner-active{
         height: 100%;
     }
     
-    .video__placeholder {
+    #banner  .video__placeholder {
         width: 100%;
         position: absolute;
         object-fit: cover;
         height: 100%;
     }
     
-    .video__youtube {
-        padding-bottom: 56.23%;
+    #banner   .video__youtube {
+        padding-bottom: 49%;
         width: 100%;
         height: 0;
         overflow: hidden;
         position: relative;
         object-fit: cover;
-        background-color: black;
+        background-color: #000;
     }
     
-    .video__button {
-        background: none;
+    #banner   .video__button {
+        background-color: transparent;
         border: 0;
         cursor: pointer;
         height: 100%;
@@ -667,7 +668,8 @@ li.winner-active{
         width: 100%;
     }
     
-    .video__button:before {
+    #banner .video__button:before {
+        background-color: transparent;
         width:100%;
         height:100%;
         content: '';
@@ -675,11 +677,81 @@ li.winner-active{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: url(youtube-play-dark.svg) no-repeat center center;
         background-size: 10%; 
     }
     
-    .video__button:hover:before {
-        background: url(youtube-play-red.svg) no-repeat center center;
+    #banner  .video__button:hover:before {
+        background-color: transparent;
+        background-size: 10%; 
+    }
+
+
+    
+    /*  */
+
+    #player_stories .video {
+        position: relative;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 768px){
+        #player_stories .video {
+            position: relative;
+            width: 100%;
+        } 
+    }
+    
+    #player_stories   .video__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #player_stories  .video__placeholder {
+        width: 100%;
+        position: absolute;
+        object-fit: cover;
+        height: 100%;
+    }
+    
+    #player_stories   .video__youtube {
+        padding-bottom: 49%;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        object-fit: cover;
+        background-color: #000;
+    }
+    
+    #player_stories   .video__button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        text-indent: -9999px;
+        top: 0;
+        transition: transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        width: 100%;
+    }
+    
+    #player_stories .video__button:before {
+        background-color: transparent;
+        width:100%;
+        height:100%;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-size: 10%; 
+    }
+    
+    #player_stories  .video__button:hover:before {
+        background-color: transparent;
         background-size: 10%; 
     }
