@@ -251,11 +251,12 @@ Array.from(document.querySelectorAll(".downloadable")).map(download => {
             var url = event.target.dataset.youtubeButton;
             var youtubePlaceholder = event.target.parentNode;
 
-            var htmlString = '<div class="video__youtube"> <iframe class="video__iframe" src="' + url + '?autoplay=1" frameborder="0" allowfullscreen></iframe></div>';
+            var htmlString = '<div class="video__youtube"> <iframe class="video__iframe" src="' + url + '?autoplay=1'+ '" allow=" autoplay;"  frameborder="0" allowfullscreen></iframe></div>';
 
             youtubePlaceholder.style.display = 'none';
             youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
             youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
+            document.querySelector('.ytp-large-play-button').click()
         }
 
         return {
