@@ -479,7 +479,6 @@ background-image: initial;
 
     .splide__slide img{
         width: 100%;
-        height: 200px;
     }
 
     .splide__pagination{
@@ -724,6 +723,11 @@ li.winner-active{
         position: relative;
         object-fit: cover;
         background-color: #000;
+    }
+
+    #player_stories   .video__youtube img{
+        width: 100%;
+        object-fit: contain;
     }
     
     #player_stories   .video__button {
