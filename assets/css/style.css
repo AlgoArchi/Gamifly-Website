@@ -101,7 +101,7 @@ footer{
 @media screen and (max-width: 768px){
 
     .down-fs{
-        font-size: .8rem;
+        font-size: 13px;
     }
 
     .subtitle-fz{
@@ -122,6 +122,15 @@ footer{
 
 }
 
+footer .list-unstyled a, footer .col-md-2 a, footer p{
+    color: rgba(222, 221, 221, 0.864);
+    transition: .4s;
+}
+
+footer .list-unstyled a:hover, footer .col-md-2 a:hover, footer p{
+    color: #fff;
+}
+
 footer .social{
     padding-left: 0 !important;
 }
@@ -131,8 +140,8 @@ footer .social li{
 }
 
 footer .social li a{
-    color: rgba(185, 185, 185, 0.41);
-    padding-right: 10px;
+    color: rgba(222, 221, 221, 0.864);
+    padding: 10px;
     transition: .4s;
     font-size: 24px;
 }
