@@ -1,3 +1,8 @@
+const pathname = window.location.pathname
+
+if(pathname == '/okx'){
+    window.location.replace("https://galxe.com/cricketfly")
+}
 
 window.addEventListener("scroll",() => {
 
