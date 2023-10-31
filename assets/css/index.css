@@ -933,6 +933,49 @@ li.winner-active{
     padding: 20px 0;
 }
 
+#download-banner{
+    min-height: 475px;
+    background-image: url(../images/download-now.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 70px 75px;
+    border: 2px solid #494949;
+
+}
+
+#download-banner .download-banner-title{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.download-banner-subtitle{
+    color: #A981FF;
+    text-shadow: 0px 0px 20px #B47AFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.banner-download-now{
+    border-radius: 12px;
+    background: linear-gradient(151deg, rgba(197, 255, 105, 1) 0%, rgba(156, 255, 0, 1) 100%);
+    text-transform: uppercase;
+    color: #000 !important;
+    font-weight: bolder !important;
+    font-family: 'Sofia_Pro_Black' , sans-serif;
+    text-decoration: none;
+    animation: download-animate .4s alternate infinite;
+    padding: 20px 40px;
+    font-size: 17px;
+    transition: .4s;
+}
+
 @media screen and (max-width: 768px) {
     
     #blog-detail{
