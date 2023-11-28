@@ -57,23 +57,64 @@
                     <p class="text-center fz-20 text-uppercase primary-color my-2">
                         Payment Status Page
                     </p>
-                    <h1 class="text-white subtitle-fz eurostile-extd text-uppercase text-center">
-                        Your order id: f3ac52a9-056c-46b6-bc7a-517f91d3dbd4
+                    <h1 class="text-white subtitle-fz eurostile-extd text-uppercase text-center" id="orderId">
+                        Your order id: 
                     </h1>
-                    <h3 class="text-green eurostile-extd text-uppercase text-center">
-                        Your payment has been processed successfully
+                    <h3 class="text-green eurostile-extd text-uppercase text-center" id="paymentStatus">
+                        checking...
                     </h3>
                 </div>
             </div>
             <div class="row my-4">
                 <div class="col-12">
                     <div class="w-100 d-flex gap-lg-5 gap-2 gap-sm-3  justify-content-center align-items-center">
-                        
+
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
+    <script>
+        // Function to get the value of a query parameter from the URL
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Get the order ID from the URL
+        var orderId = getParameterByName('order_id');
+
+        // Update the content dynamically
+        if (orderId) {
+            document.getElementById('orderId').innerText = 'Your order id: ' + orderId;
+
+            // Make an API call to check the payment status
+            var apiUrl = 'https://app.gamifly.co/api/v1/cash_payin/check-cardIn';
+
+            // Assume you are using the Fetch API for simplicity
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ order_id: orderId }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Data ", data);
+                    // Update the payment status based on the API response
+                    var paymentStatus = data.result ? 'Your payment has been processed successfully' : data.message;
+                    document.getElementById('paymentStatus').innerText = paymentStatus;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
 </body>
 
 </html>
